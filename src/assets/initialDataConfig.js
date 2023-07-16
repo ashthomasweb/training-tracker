@@ -1,4 +1,4 @@
-let userData = {
+export const userData = {
     name: 'Ash',
     id: 14736251,
     trainers: [

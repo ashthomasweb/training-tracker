@@ -1,0 +1,70 @@
+/******************************************************************************
+* FILENAME:
+*   header-comment-block.mjs
+
+* DESCRIPTION:
+*   This is an area to place a general description of the file. Please limit
+*   line length to less than 80. The header delimiter is 80 characters long.
+*   Place an asterisk in column 1 to continue blocked comments.
+
+* NOTES:
+*   - 
+
+* (c) Copyright Ashley Thomas
+* Usage Rights: Not for public use or redistribution.
+
+******************************************************************************/
+
+.sign-in {
+  width: 380px;
+  display: inline-flex;
+  flex-direction: column;
+  // outline: 200px solid white;
+
+
+  span {
+    text-align: center;
+
+    font-family: proxima-nova, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18.2px;
+  }
+
+  h2 {
+    text-align: center;
+    font-family: proxima-nova, sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 39px;
+  }
+
+  .title {
+    margin: 10px 0px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  button {
+    font-family: proxima-nova, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.6px;
+    width: 336px;
+    height: 46px;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    background-color: black;
+    cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    margin: 10px 0;
+  }
+}
+
+/* END of document ***********************************************************/

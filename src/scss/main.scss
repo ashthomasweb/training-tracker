@@ -1,0 +1,17 @@
+.history-container {
+    background-color: red;
+    width: 80vw;
+    height: 300px;
+}
+
+.week-container {
+    background-color: blue;
+    width: 60px;
+    display: inline-block;
+
+    input[type=checkbox] {
+        display: block;
+        width: 40px;
+        height: 30px;
+    }
+}
