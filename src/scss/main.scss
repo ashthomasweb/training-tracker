@@ -1,17 +1,45 @@
+.app-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+
+    ul {
+        background-color: green;
+        width: 350px;
+
+        li {
+            background-color: grey;
+            cursor: pointer;
+            margin: 10px;
+        }
+    }
+}
+
 .history-container {
     background-color: red;
-    width: 80vw;
+    width: 100vw;
     height: 300px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
 }
 
 .week-container {
     background-color: blue;
-    width: 60px;
+    width: 35px;
     display: inline-block;
+    height: 250px;
+    padding: 10px;
 
     input[type=checkbox] {
         display: block;
         width: 40px;
         height: 30px;
+        cursor: pointer;
     }
 }

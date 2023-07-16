@@ -4,9 +4,10 @@ import { onAuthStateChanged, getAuth } from 'firebase/auth'
 import { History } from '../components/history.component'
 import { userInitializationHandler } from '../firebase'
 import { MainContext } from '../context/MainContext'
+import { TrainerSelect } from "./trainerSelect.component"
 
 export const AppWrapper = () => {
-    const { state: { userObj }, dispatch } = useContext(MainContext)
+    const { state: { userObj, userData }, dispatch } = useContext(MainContext)
 
     const userAuth = getAuth()
 
@@ -35,7 +36,8 @@ export const AppWrapper = () => {
             {userObj === null ? (
                 <SignInUpModal />
             ) : (
-                <div className="App">
+                <div className="app-container">
+                    <TrainerSelect />
                     <History />
                 </div>
             )}</>

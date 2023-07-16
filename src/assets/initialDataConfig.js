@@ -178,6 +178,146 @@ export const userData = {
                     description: 'Go up and down',
                 },
             ]
+        },
+        {
+            id: 4321,
+            title: 'Exercise Routine',
+            createdAt: new Date(),
+            history: [
+                {
+                    weekNumber: 1,
+                    startDate: new Date(),
+                    sunday: [
+                        {
+                            id: 2234,
+                            title: 'Curls',
+                            priority: 'High',
+                            pointValue: 4,
+                            description: 'Go up and down',
+                        },
+                    ],
+                    monday: [
+                        {
+                            id: 2234,
+                            title: 'Squats',
+                            priority: 'High',
+                            pointValue: 4,
+                            description: 'Go up and down',
+                        },
+                    ],
+                    tuesday: [
+                        {
+                            id: 2234,
+                            title: 'Running',
+                            priority: 'High',
+                            pointValue: 4,
+                            description: 'Go up and down',
+                        },
+                    ],
+                    wednesday: [
+                        {
+                            id: 2234,
+                            title: 'Yoga',
+                            priority: 'High',
+                            pointValue: 4,
+                            description: 'Go up and down',
+                        },
+                    ],
+                    thursday: [
+                        {
+                            id: 2234,
+                            title: 'Deadlifts',
+                            priority: 'High',
+                            pointValue: 4,
+                            description: 'Go up and down',
+                        },
+                    ],
+                    friday: [
+                        
+                    ],
+                    saturday: [
+                       
+                    ],
+                    totalWeeklyPoints: 14
+                },
+                {
+                    weekNumber: 2,
+                    startDate: new Date(),
+                    sunday: [
+                        
+                    ],
+                    monday: [
+                       
+                    ],
+                    tuesday: [
+                        
+                    ],
+                    wednesday: [
+                        
+                    ],
+                    thursday: [
+                        {
+                            id: 2234,
+                            title: 'Squats',
+                            priority: 'High',
+                            pointValue: 4,
+                            description: 'Go up and down',
+                        },
+                    ],
+                    friday: [
+                        
+                    ],
+                    saturday: [
+                        
+                    ],
+                    totalWeeklyPoints: 7
+                },
+
+            ],
+            tasks: [
+                {
+                    id: 72234,
+                    title: 'Curls',
+                    priority: 'High',
+                    pointValue: 4,
+                    description: 'Go up and down',
+                },
+                {
+                    id: 62234,
+                    title: 'Squats',
+                    priority: 'High',
+                    pointValue: 4,
+                    description: 'Go up and down',
+                },
+                {
+                    id: 52234,
+                    title: 'Running',
+                    priority: 'High',
+                    pointValue: 4,
+                    description: 'Go up and down',
+                },
+                {
+                    id: 42234,
+                    title: 'Yoga',
+                    priority: 'High',
+                    pointValue: 4,
+                    description: 'Go up and down',
+                },
+                {
+                    id: 32234,
+                    title: 'Deadlifts',
+                    priority: 'High',
+                    pointValue: 4,
+                    description: 'Go up and down',
+                },
+                {
+                    id: 22234,
+                    title: 'Shoulders',
+                    priority: 'High',
+                    pointValue: 4,
+                    description: 'Go up and down',
+                },
+            ]
         }
     ],
     createdAt: new Date(),

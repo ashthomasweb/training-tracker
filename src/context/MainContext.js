@@ -29,6 +29,16 @@ export const MainReducer = (state, action) => {
               userObj: userObj,
             }
           }
+
+          
+          case 'SET_CURRENT_TRAINER': {
+            console.log(`Trace: SET_CURRENT_TRAINER()`)
+            console.log(action.payload)
+            return {
+              ...state,
+              currentTrainer: action.payload
+            }
+          }
     
         default:
             break;
