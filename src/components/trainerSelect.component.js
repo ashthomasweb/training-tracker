@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { MainContext } from "../context/MainContext";
 
 export const TrainerSelect = () => {
-    const { state: { userData }, dispatch } = useContext(MainContext)
+    const { state: { userData, currentTrainerID }, dispatch } = useContext(MainContext)
 
     const setCurrentTrainer = (trainerID) => {
         dispatch({ type: 'SET_CURRENT_TRAINER', payload: trainerID })
@@ -10,7 +10,8 @@ export const TrainerSelect = () => {
 
     console.log(userData.trainers)
     return (
-        <>
+        <div className='trainer-select'
+        style={{display: `${currentTrainerID ? 'none' : 'flex'}`}}>
             <h1>Welcome {userData.name}!</h1>
             <span>Please select your trainer</span>
             <ul>
@@ -18,6 +19,6 @@ export const TrainerSelect = () => {
                     <li onClick={() => setCurrentTrainer(trainerEntry.id)}>{trainerEntry.title}</li>
                 ))}
             </ul>
-        </>
+        </div>
     )
 }

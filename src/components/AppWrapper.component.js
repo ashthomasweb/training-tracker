@@ -5,9 +5,10 @@ import { History } from '../components/history.component'
 import { userInitializationHandler } from '../firebase'
 import { MainContext } from '../context/MainContext'
 import { TrainerSelect } from "./trainerSelect.component"
+import { Header } from "./header.component"
 
 export const AppWrapper = () => {
-    const { state: { userObj, userData }, dispatch } = useContext(MainContext)
+    const { state: { userObj }, dispatch } = useContext(MainContext)
 
     const userAuth = getAuth()
 
@@ -38,6 +39,7 @@ export const AppWrapper = () => {
             ) : (
                 <div className="app-container">
                     <TrainerSelect />
+                    <Header />
                     <History />
                 </div>
             )}</>

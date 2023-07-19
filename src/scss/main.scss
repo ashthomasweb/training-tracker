@@ -6,6 +6,55 @@
     align-content: space-around;
     align-items: center;
 
+   
+}
+
+.history-container {
+    background-color: rgb(221, 157, 157);
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.week-container {
+    background-color: rgb(172, 172, 172);
+    width: 25px;
+    display: inline-block;
+    height: 172px;
+    padding: 2px 3px 2px;
+
+    div {
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin: 4px;
+        position: relative;
+        right: 1px;
+    }
+}
+
+.trainer-select {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    box-shadow: 0px 0px 32px #666;
+    border: 6px solid grey;
+    border-radius: 30px;
+    background-color: whitesmoke;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
     ul {
         background-color: green;
         width: 350px;
@@ -18,28 +67,12 @@
     }
 }
 
-.history-container {
-    background-color: red;
-    width: 100vw;
-    height: 300px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
+.header {
+    height: 200px;
 
-}
-
-.week-container {
-    background-color: blue;
-    width: 35px;
-    display: inline-block;
-    height: 250px;
-    padding: 10px;
-
-    input[type=checkbox] {
-        display: block;
-        width: 40px;
-        height: 30px;
-        cursor: pointer;
+    button {
+        display: inline-block;
+        position: relative;
+        bottom: -10px;
     }
 }

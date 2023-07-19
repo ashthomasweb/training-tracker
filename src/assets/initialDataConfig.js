@@ -8,6 +8,128 @@ export const userData = {
             createdAt: new Date(),
             history: [
                 {
+                    weekNumber: 3,
+                    startDate: new Date(),
+                    sunday: [
+                        
+                    ],
+                    monday: [
+                     
+                    ],
+                    tuesday: [
+                       
+                    ],
+                    wednesday: [
+                        
+                    ],
+                    thursday: [
+                        {
+                            id: 2234,
+                            title: 'Improvisation',
+                            priority: 'High',
+                            pointValue: 4,
+                            description: 'Go up and down',
+                        },
+                        {
+                            id: 2234,
+                            title: 'Repertoire',
+                            priority: 'High',
+                            pointValue: 4,
+                            description: 'Go up and down',
+                        },
+                        {
+                            id: 2234,
+                            title: 'Repertoire',
+                            priority: 'High',
+                            pointValue: 4,
+                            description: 'Go up and down',
+                        },
+                        {
+                            id: 2234,
+                            title: 'Repertoire',
+                            priority: 'High',
+                            pointValue: 20,
+                            description: 'Go up and down',
+                        },
+                    ],
+                    friday: [
+                        {
+                            id: 2234,
+                            title: 'Repertoire',
+                            priority: 'High',
+                            pointValue: 4,
+                            description: 'Go up and down',
+                        },
+                    ],
+                    saturday: [
+                        {
+                            id: 2234,
+                            title: 'Repertoire',
+                            priority: 'High',
+                            pointValue: 40,
+                            description: 'Go up and down',
+                        },
+                    ],
+                    totalWeeklyPoints: 16
+                },
+                {
+                    weekNumber: 2,
+                    startDate: new Date(),
+                    sunday: [
+                        
+                    ],
+                    monday: [
+                        {
+                            id: 2234,
+                            title: 'Arpeggios',
+                            priority: 'High',
+                            pointValue: 4,
+                            description: 'Go up and down',
+                        },
+                        {
+                            id: 2234,
+                            title: 'Chords',
+                            priority: 'High',
+                            pointValue: 20,
+                            description: 'Go up and down',
+                        },
+                    ],
+                    tuesday: [
+                        {
+                            id: 2234,
+                            title: 'Chords',
+                            priority: 'High',
+                            pointValue: 4,
+                            description: 'Go up and down',
+                        },
+                    ],
+                    wednesday: [
+                        
+                    ],
+                    thursday: [
+                        {
+                            id: 2234,
+                            title: 'Improvisation',
+                            priority: 'High',
+                            pointValue: 40,
+                            description: 'Go up and down',
+                        },
+                    ],
+                    friday: [
+                        {
+                            id: 2234,
+                            title: 'Repertoire',
+                            priority: 'High',
+                            pointValue: 4,
+                            description: 'Go up and down',
+                        },
+                    ],
+                    saturday: [
+                        
+                    ],
+                    totalWeeklyPoints: 16
+                },
+                {
                     weekNumber: 1,
                     startDate: new Date(),
                     sunday: [
@@ -15,7 +137,7 @@ export const userData = {
                             id: 2234,
                             title: 'Scales',
                             priority: 'High',
-                            pointValue: 4,
+                            pointValue: 12,
                             description: 'Go up and down',
                         },
                     ],
@@ -24,7 +146,7 @@ export const userData = {
                             id: 2234,
                             title: 'Arpeggios',
                             priority: 'High',
-                            pointValue: 4,
+                            pointValue: 30,
                             description: 'Go up and down',
                         },
                     ],
@@ -42,7 +164,7 @@ export const userData = {
                             id: 2234,
                             title: 'Sight Reading',
                             priority: 'High',
-                            pointValue: 4,
+                            pointValue: 40,
                             description: 'Go up and down',
                         },
                     ],
@@ -51,7 +173,7 @@ export const userData = {
                             id: 2234,
                             title: 'Improvisation',
                             priority: 'High',
-                            pointValue: 4,
+                            pointValue: 50,
                             description: 'Go up and down',
                         },
                     ],
@@ -60,7 +182,7 @@ export const userData = {
                             id: 2234,
                             title: 'Repertoire',
                             priority: 'High',
-                            pointValue: 4,
+                            pointValue: 50,
                             description: 'Go up and down',
                         },
                     ],
@@ -76,54 +198,30 @@ export const userData = {
                     totalWeeklyPoints: 28
                 },
                 {
-                    weekNumber: 2,
+                    weekNumber: null,
                     startDate: new Date(),
                     sunday: [
                         
                     ],
                     monday: [
-                        {
-                            id: 2234,
-                            title: 'Arpeggios',
-                            priority: 'High',
-                            pointValue: 4,
-                            description: 'Go up and down',
-                        },
+                        
                     ],
                     tuesday: [
-                        {
-                            id: 2234,
-                            title: 'Chords',
-                            priority: 'High',
-                            pointValue: 4,
-                            description: 'Go up and down',
-                        },
+                        
                     ],
                     wednesday: [
                         
                     ],
                     thursday: [
-                        {
-                            id: 2234,
-                            title: 'Improvisation',
-                            priority: 'High',
-                            pointValue: 4,
-                            description: 'Go up and down',
-                        },
+                       
                     ],
                     friday: [
-                        {
-                            id: 2234,
-                            title: 'Repertoire',
-                            priority: 'High',
-                            pointValue: 4,
-                            description: 'Go up and down',
-                        },
+                       
                     ],
                     saturday: [
                         
                     ],
-                    totalWeeklyPoints: 16
+                    totalWeeklyPoints: 0
                 },
 
             ],
