@@ -8,19 +8,90 @@ export const userData = {
             createdAt: new Date(),
             history: [
                 {
+                    weekNumber: 4,
+                    startDate: new Date(),
+                    sunday: [
+
+                    ],
+                    monday: [
+                        {
+                            id: 2234,
+                            title: 'Arpeggios',
+                            priority: 'High',
+                            pointValue: 4,
+                            description: 'Go up and down',
+                        },
+                        {
+                            id: 2234,
+                            title: 'Chords',
+                            priority: 'High',
+                            pointValue: 20,
+                            description: 'Go up and down',
+                        },
+                        {
+                            id: 2234,
+                            title: 'Chords',
+                            priority: 'High',
+                            pointValue: 20,
+                            description: 'Go up and down',
+                        },
+                        {
+                            id: 2234,
+                            title: 'Chords',
+                            priority: 'High',
+                            pointValue: 20,
+                            description: 'Go up and down',
+                        },
+                    ],
+                    tuesday: [
+                        {
+                            id: 2234,
+                            title: 'Chords',
+                            priority: 'High',
+                            pointValue: 4,
+                            description: 'Go up and down',
+                        },
+                    ],
+                    wednesday: [
+
+                    ],
+                    thursday: [
+                        {
+                            id: 2234,
+                            title: 'Improvisation',
+                            priority: 'High',
+                            pointValue: 40,
+                            description: 'Go up and down',
+                        },
+                    ],
+                    friday: [
+                    ],
+                    saturday: [
+                        {
+                            id: 2234,
+                            title: 'Repertoire',
+                            priority: 'High',
+                            pointValue: 4,
+                            description: 'Go up and down',
+                        },
+
+                    ],
+                    totalWeeklyPoints: 16
+                },
+                {
                     weekNumber: 3,
                     startDate: new Date(),
                     sunday: [
-                        
+
                     ],
                     monday: [
-                     
+
                     ],
                     tuesday: [
-                       
+
                     ],
                     wednesday: [
-                        
+
                     ],
                     thursday: [
                         {
@@ -76,7 +147,7 @@ export const userData = {
                     weekNumber: 2,
                     startDate: new Date(),
                     sunday: [
-                        
+
                     ],
                     monday: [
                         {
@@ -104,7 +175,7 @@ export const userData = {
                         },
                     ],
                     wednesday: [
-                        
+
                     ],
                     thursday: [
                         {
@@ -125,7 +196,7 @@ export const userData = {
                         },
                     ],
                     saturday: [
-                        
+
                     ],
                     totalWeeklyPoints: 16
                 },
@@ -201,25 +272,25 @@ export const userData = {
                     weekNumber: null,
                     startDate: new Date(),
                     sunday: [
-                        
+
                     ],
                     monday: [
-                        
+
                     ],
                     tuesday: [
-                        
+
                     ],
                     wednesday: [
-                        
+
                     ],
                     thursday: [
-                       
+
                     ],
                     friday: [
-                       
+
                     ],
                     saturday: [
-                        
+
                     ],
                     totalWeeklyPoints: 0
                 },
@@ -331,10 +402,10 @@ export const userData = {
                         },
                     ],
                     friday: [
-                        
+
                     ],
                     saturday: [
-                       
+
                     ],
                     totalWeeklyPoints: 14
                 },
@@ -342,16 +413,16 @@ export const userData = {
                     weekNumber: 2,
                     startDate: new Date(),
                     sunday: [
-                        
+
                     ],
                     monday: [
-                       
+
                     ],
                     tuesday: [
-                        
+
                     ],
                     wednesday: [
-                        
+
                     ],
                     thursday: [
                         {
@@ -363,10 +434,10 @@ export const userData = {
                         },
                     ],
                     friday: [
-                        
+
                     ],
                     saturday: [
-                        
+
                     ],
                     totalWeeklyPoints: 7
                 },

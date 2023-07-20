@@ -3,7 +3,7 @@ import { MainContext } from "../context/MainContext"
 
 export const Week = (props) => {
 
-    const { state: { userData } } = useContext(MainContext)
+    const { state: { userData }, dispatch } = useContext(MainContext)
 
     let currentTrainerHistory = userData.trainers[0].history[props.weekIndex]
 
@@ -18,7 +18,7 @@ export const Week = (props) => {
         dailyInput.forEach(element => {
             dailyTotal = dailyTotal + element.pointValue
         });
-        
+
         if (dailyTotal > 0 & dailyTotal <= 10) {
             return lightGreen
         }
@@ -34,39 +34,38 @@ export const Week = (props) => {
         if (dailyTotal > 40) {
             return gold
         }
-        
+
+    }
+
+    const getDailyInfo = (e) => {
+        dispatch({type: 'SET_DAYS_TASK_OUTPUT', payload: currentTrainerHistory[e.target.dataset.day] })
+    }
+
+    const dayArray = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
+    function Day(index) {
+        return (
+            <div
+                onClick={getDailyInfo}
+                data-day={dayArray[index]}
+                style={{
+                    backgroundColor: `${currentTrainerHistory[dayArray[index]].length > 0
+                            ? colorHandler(currentTrainerHistory[dayArray[index]])
+                            : 'white'
+                        }`
+                }}
+            />
+        )
     }
 
     return (
         <div className="week-container">
-            <div readOnly style={{backgroundColor: `${currentTrainerHistory.sunday.length > 0 
-                ? colorHandler(currentTrainerHistory.sunday) 
-                : 'white'
-                } `}} />
-            <div readOnly style={{backgroundColor: `${currentTrainerHistory.monday.length > 0 
-                ? colorHandler(currentTrainerHistory.monday)  
-                : 'white'
-                } `}} />
-            <div readOnly style={{backgroundColor: `${currentTrainerHistory.tuesday.length > 0 
-                ? colorHandler(currentTrainerHistory.tuesday)     
-                : 'white'
-                } `}} />
-            <div readOnly style={{backgroundColor: `${currentTrainerHistory.wednesday.length > 0 
-                ? colorHandler(currentTrainerHistory.wednesday)   
-                : 'white'
-                } `}} />
-            <div readOnly style={{backgroundColor: `${currentTrainerHistory.thursday.length > 0 
-                ? colorHandler(currentTrainerHistory.thursday)    
-                : 'white'
-                } `}} />
-            <div readOnly style={{backgroundColor: `${currentTrainerHistory.friday.length > 0 
-                ? colorHandler(currentTrainerHistory.friday) 
-                : 'white'
-                } `}} />
-            <div readOnly style={{backgroundColor: `${currentTrainerHistory.saturday.length > 0 
-                ? colorHandler(currentTrainerHistory.saturday)    
-                : 'white'
-                } `}} />
+            {
+                props ?
+                    dayArray.map((day, index) => (
+                        Day(index)
+                    ))
+                    : null
+            }
         </div>
     )
 }

@@ -6,6 +6,7 @@ import { userInitializationHandler } from '../firebase'
 import { MainContext } from '../context/MainContext'
 import { TrainerSelect } from "./trainerSelect.component"
 import { Header } from "./header.component"
+import { DaysTaskOutput } from "./taskOutput.component"
 
 export const AppWrapper = () => {
     const { state: { userObj }, dispatch } = useContext(MainContext)
@@ -41,6 +42,7 @@ export const AppWrapper = () => {
                     <TrainerSelect />
                     <Header />
                     <History />
+                    <DaysTaskOutput />
                 </div>
             )}</>
     )

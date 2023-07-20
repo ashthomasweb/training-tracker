@@ -6,7 +6,8 @@ export const MainContext = createContext()
 export const initialMainState = {
     userObj: null,
     userData: userData,
-    currentTrainerID: null
+    currentTrainerID: null,
+    daysTaskOutput: []
 }
 
 export const MainReducer = (state, action) => {
@@ -33,10 +34,18 @@ export const MainReducer = (state, action) => {
 
           case 'SET_CURRENT_TRAINER': {
             console.log(`Trace: SET_CURRENT_TRAINER()`)
-            console.log(action.payload)
             return {
               ...state,
               currentTrainerID: action.payload
+            }
+          }
+
+          case 'SET_DAYS_TASK_OUTPUT': {
+            console.log(`Trace: SET_DAYS_TASK_OUTPUT()`)
+            console.log(action.payload)
+            return {
+              ...state,
+              daysTaskOutput: [...action.payload]
             }
           }
     

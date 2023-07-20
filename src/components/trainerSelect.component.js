@@ -8,7 +8,6 @@ export const TrainerSelect = () => {
         dispatch({ type: 'SET_CURRENT_TRAINER', payload: trainerID })
     }
 
-    console.log(userData.trainers)
     return (
         <div className='trainer-select'
         style={{display: `${currentTrainerID ? 'none' : 'flex'}`}}>
