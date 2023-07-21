@@ -1,15 +1,14 @@
 import { useContext } from "react"
 import { MainContext } from "../context/MainContext"
 
-export const DaysTaskOutput = () => {
-    const { state: { daysTaskOutput } } = useContext(MainContext)
+export const TaskList = () => {
+    const { state: { currentTrainerID, userData } } = useContext(MainContext)
 
     const taskDisplay = (task) => {
 
         return (
             <table>
                 <tbody>
-
                     <tr>
                         <td>Title:</td>
                         <td><strong>{task.title}</strong></td>
@@ -33,15 +32,15 @@ export const DaysTaskOutput = () => {
 
 
     return (
-        <div className="days-task-output-container">
+        <div className="task-list">
             {
-                daysTaskOutput.length > 0 ?
-                    daysTaskOutput.map((task) => (
-                        <div className="task-display-entry">
-                            {taskDisplay(task)}
-                        </div>
-                    ))
-                    : null
+                currentTrainerID !== null ?
+                userData.trainers.filter(entry => entry.id === currentTrainerID)[0].tasks.map((task) => (
+                    <div className="task-display-entry">
+                        {taskDisplay(task)}
+                    </div>
+                ))
+                : null
             }
         </div>
     )

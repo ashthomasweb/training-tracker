@@ -7,6 +7,8 @@ import { MainContext } from '../context/MainContext'
 import { TrainerSelect } from "./trainerSelect.component"
 import { Header } from "./header.component"
 import { DaysTaskOutput } from "./taskOutput.component"
+import { NewTask } from "./newTask.component"
+import { TaskList } from "./taskList.component"
 
 export const AppWrapper = () => {
     const { state: { userObj }, dispatch } = useContext(MainContext)
@@ -43,6 +45,8 @@ export const AppWrapper = () => {
                     <Header />
                     <History />
                     <DaysTaskOutput />
+                    <NewTask />
+                    <TaskList />
                 </div>
             )}</>
     )

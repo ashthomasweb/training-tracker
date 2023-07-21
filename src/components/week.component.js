@@ -7,11 +7,11 @@ export const Week = (props) => {
 
     let currentTrainerHistory = userData.trainers[0].history[props.weekIndex]
 
-    let lightGreen = '#9be9a8'
-    let mediumGreen = '#40c463'
-    let standardGreen = '#30a14e'
-    let darkGreen = '#30a14e'
-    let gold = '#ffd700'
+    let lightGreen = '#8accff'
+    let mediumGreen = '#2fb5ff'
+    let standardGreen = '#3292ff'
+    let darkGreen = '#227dff'
+    let gold = '#ffd600'
 
     const colorHandler = (dailyInput) => {
         let dailyTotal = 0
