@@ -28,6 +28,8 @@ import {
   doc,
   setDoc,
   onSnapshot,
+  updateDoc,
+  deleteDoc
 } from 'firebase/firestore'
 
 let firebaseConfig = {
@@ -104,62 +106,56 @@ export const userInitializationHandler = async (
  
 }
 
-// export const gatherUserListsFromDB = async (userAuth, dispatch, isInitial = false) => {
-//   // console.log(`Trace: gatherUserListsFromDB`)
-//   if (!userAuth) return
-//   let userLists = []
-//   const userBoardFirestoreRef = await collection(
-//     db,
-//     'lists'
-//   )
-//   const userBoardQuery = query(userBoardFirestoreRef)
-//   const userBoardSnapshot = await getDocs(userBoardQuery)
-//   userBoardSnapshot.forEach((doc) => {
-//       userLists.push(doc.data())
-//   })
-//   // debugger
-//   isInitial === true && dispatch({ type: 'SET_USERLISTS', payload: { lists: userLists } })
-// }
+export const gatherUserDataFromDB = async (userAuth, dispatch) => {
+  console.log(`Trace: gatherUserDataFromDB`)
+  if (!userAuth) return
+  let userDataArray = []
+  const userBoardFirestoreRef = await collection(
+    db,
+    `users`,
+    `${userAuth.uid}`,
+    `userData`,
+  )
+  const userBoardQuery = query(userBoardFirestoreRef)
+  const userBoardSnapshot = await getDocs(userBoardQuery)
+  userBoardSnapshot.forEach((doc) => {
+    userDataArray.push(doc.data())
+  })
+  dispatch({ type: 'SET_USERLISTS', payload: { userDataArray: userDataArray } })
+}
 
-// export const saveUserListToDB = async (userAuth, listObj) => {
-//   // console.log(`Trace: saveUserListToDB`)
-//   const {
-//     listItems,
-//   } = listObj
-
-//   const listFireStoreRef = doc(
-//     db,
-//     `lists`,
-//     `items`
-//   )
-//   const listSnapShot = await getDoc(listFireStoreRef)
-
-//   if (!listSnapShot.exists()) {
-//     // console.log('none')
-//     let list = {
-//       listItems,
-//     }
-//     try {
-//       await setDoc(listFireStoreRef, list)
-//       // toast('New Diagram Saved Successfully!')
-//     } catch (error) {
-//       console.log('error creating list', error.message)
-//       // toast('error creating diagram')
-//     }
-//   } else if (listSnapShot.exists()) {
-//     // console.log('some')
-//     let list = {
-//       listItems,
-//     }
-//     try {
-//       await setDoc(listFireStoreRef, list, { merge: true })
-//       // toast('Diagram Saved Successfully!')
-//     } catch (error) {
-//       console.log('error creating list', error.message)
-//       // toast('error creating board')
-//     }
-//   }
-// }
+export const saveUserDataToDB = async (userUID, userDataObj) => {
+  console.log(`Trace: saveUserDataToDB`)
+  console.log(userDataObj)
+  const listFireStoreRef = doc(
+    db,
+    `users`,
+    `${userUID}`,
+    `userData`,
+    `backup`
+    )
+    
+    const listSnapShot = await getDoc(listFireStoreRef)
+    
+    if (!listSnapShot.exists()) {
+      // console.log('none')
+      try {
+        await setDoc(listFireStoreRef, userDataObj)
+      // toast('New Diagram Saved Successfully!')
+    } catch (error) {
+      console.log('error creating new list', error.message)
+      // toast('error creating diagram')
+    }
+  } else if (listSnapShot.exists()) {
+    try {
+      await setDoc(listFireStoreRef, userDataObj, {merge: true}) 
+      // toast('Diagram Saved Successfully!')
+    } catch (error) {
+      console.log('error updating list', error.message)
+      // toast('error creating board')
+    }
+  }
+}
 
 // export const gatherStoreListFromDB = async (userAuth, dispatch) => {
 //   // console.log(`Trace: gatherStoreListFromDB`)

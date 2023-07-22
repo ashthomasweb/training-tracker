@@ -1,11 +1,12 @@
 import { createContext } from "react";
 import { userData } from "../assets/initialDataConfig";
+import { saveUserDataToDB } from "../firebase";
 
 export const MainContext = createContext()
 
 export const initialMainState = {
   userObj: null,
-  userData: userData,
+  userData: null,
   currentTrainerID: null,
   daysTaskOutput: []
 }
@@ -62,9 +63,42 @@ export const MainReducer = (state, action) => {
         }),
       };
 
+      
+      saveUserDataToDB(action.payload.userUID, updatedUserData)
       return {
         ...state,
         userData: updatedUserData
+      }
+    }
+
+    case 'ADD_TASK_TO_HISTORY': {
+      const history = state.userData.trainers.filter(trainer => trainer.id === action.payload.currentTrainerID)[0].history
+      history[0] = action.payload.mostRecentWeek
+      const updatedUserData = {
+        ...state.userData,
+        trainers: state.userData.trainers.map(trainer => {
+          if (trainer.id === action.payload.currentTrainerID) {
+            return {
+              ...trainer,
+              history
+            };
+          }
+          return trainer;
+        }),
+      };
+
+      saveUserDataToDB(action.payload.userUID, updatedUserData)
+      return {
+        ...state,
+        userData: updatedUserData
+      }
+    }
+    
+    case 'SET_USERLISTS': {
+      // console.log(`Trace: SET_CURRENT_TRAINER()`)
+      return {
+        ...state,
+        userData: action.payload.userDataArray[0]
       }
     }
 

@@ -16,7 +16,7 @@ export const Week = (props) => {
     const colorHandler = (dailyInput) => {
         let dailyTotal = 0
         dailyInput.forEach(element => {
-            dailyTotal = dailyTotal + element.pointValue
+            element !== null && (dailyTotal = Number(dailyTotal) + Number(element.pointValue))
         });
 
         if (dailyTotal > 0 & dailyTotal <= 10) {
@@ -48,7 +48,7 @@ export const Week = (props) => {
                 onClick={getDailyInfo}
                 data-day={dayArray[index]}
                 style={{
-                    backgroundColor: `${currentTrainerHistory[dayArray[index]].length > 0
+                    backgroundColor: `${currentTrainerHistory[dayArray[index]][0] !== null
                             ? colorHandler(currentTrainerHistory[dayArray[index]])
                             : 'white'
                         }`

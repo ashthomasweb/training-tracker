@@ -1,9 +1,10 @@
 import { useContext, useRef } from "react"
 import { MainContext } from "../context/MainContext"
+import { saveUserDataToDB } from "../firebase"
 
 export const NewTask = (props) => {
 
-    const { state: { userData, currentTrainerID }, dispatch } = useContext(MainContext)
+    const { state: { userData, currentTrainerID, userObj }, dispatch } = useContext(MainContext)
     const titleRef = useRef(null)
     const descriptionRef = useRef(null)
     const pointsRef = useRef(null)
@@ -41,11 +42,11 @@ export const NewTask = (props) => {
 
         let payload = {
             task: newTask,
-            trainerID: currentTrainerID
+            trainerID: currentTrainerID,
+            userUID: userObj.uid
         }
 
         dispatch({type: 'ADD_NEW_TASK', payload: payload })
-
     }
 
     return (

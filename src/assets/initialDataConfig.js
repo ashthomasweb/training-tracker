@@ -1,5 +1,5 @@
 export const userData = {
-    name: 'Ash',
+    name: 'Ashley',
     id: 14736251,
     trainers: [
         {
@@ -10,7 +10,7 @@ export const userData = {
                 {
                     weekNumber: 4,
                     startDate: new Date(),
-                    sunday: [
+                    sunday: [null
 
                     ],
                     monday: [
@@ -52,7 +52,7 @@ export const userData = {
                             description: 'Go up and down',
                         },
                     ],
-                    wednesday: [
+                    wednesday: [null
 
                     ],
                     thursday: [
@@ -64,7 +64,7 @@ export const userData = {
                             description: 'Go up and down',
                         },
                     ],
-                    friday: [
+                    friday: [null
                     ],
                     saturday: [
                         {
@@ -81,16 +81,16 @@ export const userData = {
                 {
                     weekNumber: 3,
                     startDate: new Date(),
-                    sunday: [
+                    sunday: [null
 
                     ],
-                    monday: [
+                    monday: [null
 
                     ],
-                    tuesday: [
+                    tuesday: [null
 
                     ],
-                    wednesday: [
+                    wednesday: [null
 
                     ],
                     thursday: [
@@ -146,7 +146,7 @@ export const userData = {
                 {
                     weekNumber: 2,
                     startDate: new Date(),
-                    sunday: [
+                    sunday: [null
 
                     ],
                     monday: [
@@ -174,7 +174,7 @@ export const userData = {
                             description: 'Go up and down',
                         },
                     ],
-                    wednesday: [
+                    wednesday: [null
 
                     ],
                     thursday: [
@@ -195,7 +195,7 @@ export const userData = {
                             description: 'Go up and down',
                         },
                     ],
-                    saturday: [
+                    saturday: [null
 
                     ],
                     totalWeeklyPoints: 16
@@ -271,25 +271,25 @@ export const userData = {
                 {
                     weekNumber: null,
                     startDate: new Date(),
-                    sunday: [
+                    sunday: [null
 
                     ],
-                    monday: [
+                    monday: [null
 
                     ],
-                    tuesday: [
+                    tuesday: [null
 
                     ],
-                    wednesday: [
+                    wednesday: [null
 
                     ],
-                    thursday: [
+                    thursday: [null
 
                     ],
-                    friday: [
+                    friday: [null
 
                     ],
-                    saturday: [
+                    saturday: [null
 
                     ],
                     totalWeeklyPoints: 0
@@ -297,152 +297,14 @@ export const userData = {
 
             ],
             tasks: [
-                {
-                    id: 72234,
-                    title: 'Scales',
-                    priority: 'High',
-                    pointValue: 4,
-                    description: 'Go up and down',
-                },
-                {
-                    id: 62234,
-                    title: 'Arpeggios',
-                    priority: 'High',
-                    pointValue: 4,
-                    description: 'Go up and down',
-                },
-                {
-                    id: 52234,
-                    title: 'Chords',
-                    priority: 'High',
-                    pointValue: 4,
-                    description: 'Go up and down',
-                },
-                {
-                    id: 42234,
-                    title: 'Sight Reading',
-                    priority: 'High',
-                    pointValue: 4,
-                    description: 'Go up and down',
-                },
-                {
-                    id: 32234,
-                    title: 'Improvisation',
-                    priority: 'High',
-                    pointValue: 4,
-                    description: 'Go up and down',
-                },
-                {
-                    id: 22234,
-                    title: 'Repertoire',
-                    priority: 'High',
-                    pointValue: 4,
-                    description: 'Go up and down',
-                },
-                {
-                    id: 12234,
-                    title: 'Technique',
-                    priority: 'High',
-                    pointValue: 4,
-                    description: 'Go up and down',
-                },
+                
             ]
         },
         {
             id: 4321,
             title: 'Exercise Routine',
             createdAt: new Date(),
-            history: [
-                {
-                    weekNumber: 1,
-                    startDate: new Date(),
-                    sunday: [
-                        {
-                            id: 2234,
-                            title: 'Curls',
-                            priority: 'High',
-                            pointValue: 4,
-                            description: 'Go up and down',
-                        },
-                    ],
-                    monday: [
-                        {
-                            id: 2234,
-                            title: 'Squats',
-                            priority: 'High',
-                            pointValue: 4,
-                            description: 'Go up and down',
-                        },
-                    ],
-                    tuesday: [
-                        {
-                            id: 2234,
-                            title: 'Running',
-                            priority: 'High',
-                            pointValue: 4,
-                            description: 'Go up and down',
-                        },
-                    ],
-                    wednesday: [
-                        {
-                            id: 2234,
-                            title: 'Yoga',
-                            priority: 'High',
-                            pointValue: 4,
-                            description: 'Go up and down',
-                        },
-                    ],
-                    thursday: [
-                        {
-                            id: 2234,
-                            title: 'Deadlifts',
-                            priority: 'High',
-                            pointValue: 4,
-                            description: 'Go up and down',
-                        },
-                    ],
-                    friday: [
-
-                    ],
-                    saturday: [
-
-                    ],
-                    totalWeeklyPoints: 14
-                },
-                {
-                    weekNumber: 2,
-                    startDate: new Date(),
-                    sunday: [
-
-                    ],
-                    monday: [
-
-                    ],
-                    tuesday: [
-
-                    ],
-                    wednesday: [
-
-                    ],
-                    thursday: [
-                        {
-                            id: 2234,
-                            title: 'Squats',
-                            priority: 'High',
-                            pointValue: 4,
-                            description: 'Go up and down',
-                        },
-                    ],
-                    friday: [
-
-                    ],
-                    saturday: [
-
-                    ],
-                    totalWeeklyPoints: 7
-                },
-
-            ],
+            history: [null],
             tasks: [
                 {
                     id: 72234,
@@ -491,9 +353,9 @@ export const userData = {
     ],
     createdAt: new Date(),
     settings: {
-        taskDisplay: '',
-        trackingMode: '',
-        themeMode: '',
-        dailyTasks: ''
+        taskDisplay: null,
+        trackingMode: null,
+        themeMode: null,
+        dailyTasks: null
     }
 }

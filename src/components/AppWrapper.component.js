@@ -9,6 +9,7 @@ import { Header } from "./header.component"
 import { DaysTaskOutput } from "./taskOutput.component"
 import { NewTask } from "./newTask.component"
 import { TaskList } from "./taskList.component"
+import { gatherUserDataFromDB } from "../firebase"
 
 export const AppWrapper = () => {
     const { state: { userObj }, dispatch } = useContext(MainContext)
@@ -20,7 +21,7 @@ export const AppWrapper = () => {
         const unSubAuth = onAuthStateChanged(userAuth, async (userAuth) => {
             if (userAuth) {
                 await userInitializationHandler(userAuth, dispatch, unSubAuth)
-                // await gatherUserListsFromDB(userAuth, dispatch, true)
+                await gatherUserDataFromDB(userAuth, dispatch)
 
                 dispatch({
                     type: 'SET_CURRENT_USER_TO_STATE',

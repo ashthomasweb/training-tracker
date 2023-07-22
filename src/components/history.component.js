@@ -26,6 +26,13 @@ export const History = () => {
         }
     }, [currentTrainerID, userData, userObj])
 
+    const addWeek = () => {
+        let emptyWeek = userData.trainers.filter(entry => entry.id === currentTrainerID)[0].history.length - 1
+        emptyWeek.createdAt = userData.trainers.filter(entry => entry.id === currentTrainerID)[0].history[0].startDate + 7
+        emptyWeek.weekNumber = userData.trainers.filter(entry => entry.id === currentTrainerID)[0].history[0].weekNumber + 1
+        console.log(emptyWeek)
+    }
+
     function returnWeeks() {
         return (
             populatedWeekIndexArray.map((entry, index) => (
@@ -40,6 +47,7 @@ export const History = () => {
                 returnWeeks()
                 : null
             }
+            <button onClick={addWeek}>Add Week</button>
         </div>
     )
 }
