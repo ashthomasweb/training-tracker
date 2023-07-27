@@ -15,19 +15,20 @@ export const AppWrapper = () => {
     const { state: { userObj }, dispatch } = useContext(MainContext)
 
     const userAuth = getAuth()
-
+    useEffect(() => {
+        console.log('auth changed')
+    }, [userAuth])
+    // debugger
     useEffect(() => {
         console.log(`Trace: useEffect/AuthHandler`)
         const unSubAuth = onAuthStateChanged(userAuth, async (userAuth) => {
             if (userAuth) {
                 await userInitializationHandler(userAuth, dispatch, unSubAuth)
-                await gatherUserDataFromDB(userAuth, dispatch)
+                // await gatherUserDataFromDB(userAuth, dispatch)
 
-                dispatch({
-                    type: 'SET_CURRENT_USER_TO_STATE',
-                    payload: { userObj: userAuth },
-                })
+                
             } else if (userAuth === null) {
+                console.log('fail')
                 dispatch({
                     type: 'SET_CURRENT_USER_TO_STATE',
                     payload: { userObj: userAuth },

@@ -52,7 +52,7 @@ export const userInitializationHandler = async (
   dispatch,
   callback
 ) => {
-  // console.log(`Trace: userInitializationHandler`)
+  console.log(`Trace: userInitializationHandler`)
   if (!userAuth) return // prevent firing during lifecycle, before userAuth obj is obtained
 
   onSnapshot(
@@ -82,21 +82,24 @@ export const userInitializationHandler = async (
             ),
             user
           )
-          await dispatch({
+          console.log('no exist')
+          dispatch({
             type: 'SET_CURRENT_USER_TO_STATE',
             payload: { userObj: user },
           })
         } catch (error) {
           console.log('error creating user', error.message)
         }
-      } else if (document.exists()) {
+      }  else if (document.exists()) {
         // if record already created, retrieve from DB and add current Auth packet to user for this session
         let userObjFromDB = document.data()
         userObjFromDB = {
           ...userObjFromDB,
-          auth: userAuth,
+          // auth: userAuth,
         }
-        await dispatch({
+        console.log('exist')
+
+        dispatch({
           type: 'SET_CURRENT_USER_TO_STATE',
           payload: { userObj: userObjFromDB },
         })
@@ -132,7 +135,7 @@ export const saveUserDataToDB = async (userUID, userDataObj) => {
     `users`,
     `${userUID}`,
     `userData`,
-    `backup`
+    `data`
     )
     
     const listSnapShot = await getDoc(listFireStoreRef)
@@ -158,7 +161,7 @@ export const saveUserDataToDB = async (userUID, userDataObj) => {
 }
 
 // export const gatherStoreListFromDB = async (userAuth, dispatch) => {
-//   // console.log(`Trace: gatherStoreListFromDB`)
+//   console.log(`Trace: gatherStoreListFromDB`)
 //   if (!userAuth) return
 //   let storeList = []
 //   const userStoresFirestoreRef = await collection(
@@ -174,7 +177,7 @@ export const saveUserDataToDB = async (userUID, userDataObj) => {
 // }
 
 // export const saveStoresToDB = async (userAuth, storesList) => {
-//   // console.log(`Trace: saveStoresToDB`)
+//   console.log(`Trace: saveStoresToDB`)
 //   const {
 //     storeList,
 //   } = storesList

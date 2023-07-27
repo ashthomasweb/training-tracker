@@ -48,7 +48,7 @@ export const Week = (props) => {
                 onClick={getDailyInfo}
                 data-day={dayArray[index]}
                 style={{
-                    backgroundColor: `${currentTrainerHistory[dayArray[index]][0] !== null
+                    backgroundColor: `${currentTrainerHistory[dayArray[index]].length > 0
                             ? colorHandler(currentTrainerHistory[dayArray[index]])
                             : 'white'
                         }`
