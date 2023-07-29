@@ -8,8 +8,8 @@ export const userData = {
             createdAt: new Date(),
             history: [
                 // {
-                //     weekNumber: 29,
-                //     startDate: 'Sun Jul 23 2023',
+                //     weekNumber: 39,
+                //     startDate: 'Sun Oct 1 2023',
                 //     sunday: [],
                 //     monday: [],
                 //     tuesday: [],
@@ -20,8 +20,8 @@ export const userData = {
                 //     totalWeeklyPoints: 0
                 // },
                 // {
-                //     weekNumber: 28,
-                //     startDate: 'Sun Jul 16 2023',
+                //     weekNumber: 38,
+                //     startDate: 'Sun Sep 24 2023',
                 //     sunday: [],
                 //     monday: [],
                 //     tuesday: [],
@@ -32,8 +32,8 @@ export const userData = {
                 //     totalWeeklyPoints: 0
                 // },
                 // {
-                //     weekNumber: 27,
-                //     startDate: 'Sun Jul 9 2023',
+                //     weekNumber: 37,
+                //     startDate: 'Sun Sep 17 2023',
                 //     sunday: [],
                 //     monday: [],
                 //     tuesday: [],
@@ -43,6 +43,265 @@ export const userData = {
                 //     saturday: [],
                 //     totalWeeklyPoints: 0
                 // },
+                // {
+                //     weekNumber: 36,
+                //     startDate: 'Sun Sep 10 2023',
+                //     sunday: [],
+                //     monday: [],
+                //     tuesday: [],
+                //     wednesday: [],
+                //     thursday: [],
+                //     friday: [],
+                //     saturday: [],
+                //     totalWeeklyPoints: 0
+                // },
+                // {
+                //     weekNumber: 35,
+                //     startDate: 'Sun Sep 3 2023',
+                //     sunday: [],
+                //     monday: [],
+                //     tuesday: [],
+                //     wednesday: [],
+                //     thursday: [],
+                //     friday: [],
+                //     saturday: [],
+                //     totalWeeklyPoints: 0
+                // },
+                // {
+                //     weekNumber: 34,
+                //     startDate: 'Sun Aug 27 2023',
+                //     sunday: [],
+                //     monday: [],
+                //     tuesday: [],
+                //     wednesday: [],
+                //     thursday: [],
+                //     friday: [],
+                //     saturday: [],
+                //     totalWeeklyPoints: 0
+                // },
+                // {
+                //     weekNumber: 33,
+                //     startDate: 'Sun Aug 20 2023',
+                //     sunday: [],
+                //     monday: [],
+                //     tuesday: [],
+                //     wednesday: [],
+                //     thursday: [],
+                //     friday: [],
+                //     saturday: [],
+                //     totalWeeklyPoints: 0
+                // },
+                // {
+                //     weekNumber: 32,
+                //     startDate: 'Sun Aug 13 2023',
+                //     sunday: [],
+                //     monday: [],
+                //     tuesday: [],
+                //     wednesday: [],
+                //     thursday: [],
+                //     friday: [],
+                //     saturday: [],
+                //     totalWeeklyPoints: 0
+                // },
+                // {
+                //     weekNumber: 31,
+                //     startDate: 'Sun Aug 6 2023',
+                //     sunday: [],
+                //     monday: [],
+                //     tuesday: [],
+                //     wednesday: [],
+                //     thursday: [],
+                //     friday: [],
+                //     saturday: [],
+                //     totalWeeklyPoints: 0
+                // },
+                // {
+                //     weekNumber: 30,
+                //     startDate: 'Sun Jul 30 2023',
+                //     sunday: [],
+                //     monday: [],
+                //     tuesday: [],
+                //     wednesday: [],
+                //     thursday: [],
+                //     friday: [],
+                //     saturday: [],
+                //     totalWeeklyPoints: 0
+                // },
+                {
+                    weekNumber: 29,
+                    startDate: 'Sun Jul 23 2023',
+                    sunday: [],
+                    monday: [{
+                        "pointValue": "6",
+                        "description": "Ostinato arpeggio, freely move melodic idea",
+                        "id": 976073037560130,
+                        "title": "Arpeggio comp with free melody",
+                        "priority": "High"
+                    },],
+                    tuesday: [],
+                    wednesday: [{
+                        "pointValue": "6",
+                        "description": "Ostinato arpeggio, freely move melodic idea",
+                        "id": 976073037560130,
+                        "title": "Arpeggio comp with free melody",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 623717840382153,
+                        "title": "Arpeggios (triad)",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "6",
+                        "description": "Ostinato arpeggio, freely move melodic idea",
+                        "id": 976073037560130,
+                        "title": "Arpeggio comp with free melody",
+                        "priority": "High"
+                    },],
+                    thursday: [{
+                        "pointValue": "5",
+                        "description": "Unfamilar key work - move through typical patterns",
+                        "id": 518416483908063,
+                        "title": "Layout",
+                        "priority": "Med"
+                    }, {
+                        "pointValue": "4",
+                        "description": "Bach WTC Prelude 1",
+                        "id": 289350509717842,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "4",
+                        "description": "Move through typical progressions",
+                        "id": 248718170723754,
+                        "title": "Alberti Bass",
+                        "priority": "Med"
+                    },],
+                    friday: [],
+                    saturday: [],
+                    totalWeeklyPoints: 0
+                },
+                {
+                    weekNumber: 28,
+                    startDate: 'Sun Jul 16 2023',
+                    sunday: [],
+                    monday: [],
+                    tuesday: [{
+                        "pointValue": "4",
+                        "description": "Move through typical progressions",
+                        "id": 248718170723754,
+                        "title": "Alberti Bass",
+                        "priority": "Med"
+                    }, {
+                        "pointValue": "4",
+                        "description": "Big Rock Candy Mountain",
+                        "id": 946328013627459,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    }, {
+                        "pointValue": "4",
+                        "description": "Move through typical progressions",
+                        "id": 248718170723754,
+                        "title": "Alberti Bass",
+                        "priority": "Med"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Blue Skies",
+                        "id": 809081273797419,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    }, {
+                        "pointValue": "6",
+                        "description": "Ostinato arpeggio, freely move melodic idea",
+                        "id": 976073037560130,
+                        "title": "Arpeggio comp with free melody",
+                        "priority": "High"
+                    },],
+                    wednesday: [{
+                        "pointValue": "6",
+                        "description": "Ostinato arpeggio, freely move melodic idea",
+                        "id": 976073037560130,
+                        "title": "Arpeggio comp with free melody",
+                        "priority": "High"
+                    },],
+                    thursday: [{
+                        "pointValue": "6",
+                        "description": "Ostinato arpeggio, freely move melodic idea",
+                        "id": 976073037560130,
+                        "title": "Arpeggio comp with free melody",
+                        "priority": "High"
+                    },],
+                    friday: [],
+                    saturday: [{
+                        "pointValue": "6",
+                        "description": "Ostinato arpeggio, freely move melodic idea",
+                        "id": 976073037560130,
+                        "title": "Arpeggio comp with free melody",
+                        "priority": "High"
+                    },],
+                    totalWeeklyPoints: 0
+                },
+                {
+                    weekNumber: 27,
+                    startDate: 'Sun Jul 9 2023',
+                    sunday: [{
+                        "pointValue": "6",
+                        "description": "Ostinato arpeggio, freely move melodic idea",
+                        "id": 976073037560130,
+                        "title": "Arpeggio comp with free melody",
+                        "priority": "High"
+                    },],
+                    monday: [{
+                        "pointValue": "6",
+                        "description": "Ostinato arpeggio, freely move melodic idea",
+                        "id": 976073037560130,
+                        "title": "Arpeggio comp with free melody",
+                        "priority": "High"
+                    },],
+                    tuesday: [],
+                    wednesday: [{
+                        "pointValue": "6",
+                        "description": "Ostinato arpeggio, freely move melodic idea",
+                        "id": 976073037560130,
+                        "title": "Arpeggio comp with free melody",
+                        "priority": "High"
+                    },],
+                    thursday: [{
+                        "pointValue": "5",
+                        "description": "Unchained Melody",
+                        "id": 809081273797419,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "6",
+                        "description": "Ostinato arpeggio, freely move melodic idea",
+                        "id": 976073037560130,
+                        "title": "Arpeggio comp with free melody",
+                        "priority": "High"
+                    },],
+                    friday: [{
+                        "pointValue": "5",
+                        "description": "Unchained Melody",
+                        "id": 809081273797419,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "6",
+                        "description": "Ostinato arpeggio, freely move melodic idea",
+                        "id": 976073037560130,
+                        "title": "Arpeggio comp with free melody",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "6",
+                        "description": "Ostinato arpeggio, freely move melodic idea",
+                        "id": 976073037560130,
+                        "title": "Arpeggio comp with free melody",
+                        "priority": "High"
+                    },],
+                    saturday: [],
+                    totalWeeklyPoints: 0
+                },
                 {
                     weekNumber: 26,
                     startDate: 'Sun Jul 2 2023',
@@ -50,20 +309,63 @@ export const userData = {
                     monday: [],
                     tuesday: [],
                     wednesday: [],
-                    thursday: [],
+                    thursday: [{
+                        "pointValue": "6",
+                        "description": "Ostinato arpeggio, freely move melodic idea",
+                        "id": 976073037560130,
+                        "title": "Arpeggio comp with free melody",
+                        "priority": "High"
+                    },],
                     friday: [],
-                    saturday: [],
+                    saturday: [{
+                        "pointValue": "6",
+                        "description": "Ostinato arpeggio, freely move melodic idea",
+                        "id": 976073037560130,
+                        "title": "Arpeggio comp with free melody",
+                        "priority": "High"
+                    },],
                     totalWeeklyPoints: 0
                 },
                 {
                     weekNumber: 25,
                     startDate: 'Sun Jun 25 2023',
                     sunday: [],
-                    monday: [],
+                    monday: [{
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 623717840382153,
+                        "title": "Arpeggios (triad)",
+                        "priority": "High"
+                    },],
                     tuesday: [],
-                    wednesday: [],
+                    wednesday: [{
+                        "pointValue": "4",
+                        "description": "Move through typical progressions",
+                        "id": 248718170723754,
+                        "title": "Alberti Bass",
+                        "priority": "Med"
+                    },
+                    {
+                        "pointValue": "5",
+                        "description": "Move through typical progressions",
+                        "id": 497028742395156,
+                        "title": "Pop Comping",
+                        "priority": "Med"
+                    },],
                     thursday: [],
-                    friday: [],
+                    friday: [{
+                        "pointValue": "5",
+                        "description": "No-look activity, both hands",
+                        "id": 389783703731953,
+                        "title": "Accurate leaps",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 623717840382153,
+                        "title": "Arpeggios (triad)",
+                        "priority": "High"
+                    },],
                     saturday: [],
                     totalWeeklyPoints: 0
                 },
@@ -74,9 +376,33 @@ export const userData = {
                     monday: [],
                     tuesday: [],
                     wednesday: [],
-                    thursday: [],
-                    friday: [],
-                    saturday: [],
+                    thursday: [{
+                        "pointValue": "5",
+                        "description": "No-look activity, both hands",
+                        "id": 389783703731953,
+                        "title": "Accurate leaps",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "5",
+                        "description": "Unchained Melody",
+                        "id": 809081273797419,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },],
+                    friday: [{
+                        "pointValue": "5",
+                        "description": "Unchained Melody",
+                        "id": 809081273797419,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },],
+                    saturday: [{
+                        "pointValue": "5",
+                        "description": "Move through typical progressions",
+                        "id": 497028742395156,
+                        "title": "Pop Comping",
+                        "priority": "Med"
+                    },],
                     totalWeeklyPoints: 0
                 },
                 {
@@ -84,10 +410,28 @@ export const userData = {
                     startDate: 'Sun Jun 11 2023',
                     sunday: [],
                     monday: [],
-                    tuesday: [],
+                    tuesday: [{
+                        "pointValue": "5",
+                        "description": "Unchained Melody",
+                        "id": 809081273797419,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },],
                     wednesday: [],
                     thursday: [],
-                    friday: [],
+                    friday: [{
+                        "pointValue": "4",
+                        "description": "Pick a tune and play it",
+                        "id": 463691710853053,
+                        "title": "Play heard melody/progression by ear",
+                        "priority": "Med"
+                    }, {
+                        "pointValue": "5",
+                        "description": "Unchained Melody",
+                        "id": 809081273797419,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },],
                     saturday: [],
                     totalWeeklyPoints: 0
                 },
@@ -98,8 +442,60 @@ export const userData = {
                     monday: [],
                     tuesday: [],
                     wednesday: [],
-                    thursday: [],
-                    friday: [],
+                    thursday: [{
+                        "pointValue": "5",
+                        "description": "Unchained Melody",
+                        "id": 809081273797419,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },],
+                    friday: [{
+                        "pointValue": "4",
+                        "description": "Pick a tune and play it",
+                        "id": 463691710853053,
+                        "title": "Play heard melody/progression by ear",
+                        "priority": "Med"
+                    }, {
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Big Rock Candy Mountain",
+                        "id": 946328013627459,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Blue Skies",
+                        "id": 809081273797419,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    }, {
+                        "pointValue": "5",
+                        "description": "Unchained Melody",
+                        "id": 809081273797419,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Typical progressions, work without looking",
+                        "id": 695242715697109,
+                        "title": "Jazz Comping",
+                        "priority": "Med"
+                    },
+                    {
+                        "pointValue": "5",
+                        "description": "Warm up finger independence",
+                        "id": 515134371356797,
+                        "title": "Technique",
+                        "priority": "High"
+                    },],
                     saturday: [],
                     totalWeeklyPoints: 0
                 },
@@ -119,11 +515,42 @@ export const userData = {
                     weekNumber: 20,
                     startDate: 'Sun May 21 2023',
                     sunday: [],
-                    monday: [],
-                    tuesday: [],
-                    wednesday: [],
+                    monday: [{
+                        "pointValue": "5",
+                        "description": "Unchained Melody",
+                        "id": 809081273797419,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },],
+                    tuesday: [{
+                        "pointValue": "5",
+                        "description": "Unchained Melody",
+                        "id": 809081273797419,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },],
+                    wednesday: [{
+                        "pointValue": "6",
+                        "description": "Find your way by feel alone, speak and sing progressions/melody",
+                        "id": 521632061205478,
+                        "title": "No Sight Playing",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Typical progressions, work without looking",
+                        "id": 695242715697109,
+                        "title": "Jazz Comping",
+                        "priority": "Med"
+                    },],
                     thursday: [],
-                    friday: [],
+                    friday: [{
+                        "pointValue": "5",
+                        "description": "Unchained Melody",
+                        "id": 809081273797419,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },],
                     saturday: [],
                     totalWeeklyPoints: 0
                 },
@@ -131,35 +558,128 @@ export const userData = {
                     weekNumber: 19,
                     startDate: 'Sun May 14 2023',
                     sunday: [],
-                    monday: [],
+                    monday: [{
+                        "pointValue": "5",
+                        "description": "Unchained Melody",
+                        "id": 809081273797419,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },],
                     tuesday: [],
-                    wednesday: [],
-                    thursday: [],
-                    friday: [],
+                    wednesday: [{
+                        "pointValue": "5",
+                        "description": "Unchained Melody",
+                        "id": 809081273797419,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },],
+                    thursday: [{
+                        "pointValue": "5",
+                        "description": "Unchained Melody",
+                        "id": 809081273797419,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },],
+                    friday: [{
+                        "pointValue": "5",
+                        "description": "Unchained Melody",
+                        "id": 809081273797419,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },],
                     saturday: [],
                     totalWeeklyPoints: 0
                 },
                 {
                     weekNumber: 18,
                     startDate: 'Sun May 7 2023',
-                    sunday: [],
-                    monday: [],
-                    tuesday: [],
+                    sunday: [{
+                        "pointValue": "5",
+                        "description": "Unchained Melody",
+                        "id": 809081273797419,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },],
+                    monday: [{
+                        "pointValue": "5",
+                        "description": "Unchained Melody",
+                        "id": 809081273797419,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },],
+                    tuesday: [{
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "5",
+                        "description": "Warm up finger independence",
+                        "id": 515134371356797,
+                        "title": "Technique",
+                        "priority": "High"
+                    },],
                     wednesday: [],
-                    thursday: [],
+                    thursday: [{
+                        "pointValue": "5",
+                        "description": "Unchained Melody",
+                        "id": 809081273797419,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },],
                     friday: [],
-                    saturday: [],
+                    saturday: [{
+                        "pointValue": "5",
+                        "description": "Unchained Melody",
+                        "id": 809081273797419,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },],
                     totalWeeklyPoints: 0
                 },
                 {
                     weekNumber: 17,
                     startDate: 'Sun Apr 30 2023',
-                    sunday: [],
+                    sunday: [{
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "6",
+                        "description": "Ostinato arpeggio, freely move melodic idea",
+                        "id": 976073037560130,
+                        "title": "Arpeggio comp with free melody",
+                        "priority": "High"
+                    },],
                     monday: [],
                     tuesday: [],
-                    wednesday: [],
+                    wednesday: [{
+                        "pointValue": "4",
+                        "description": "Typical progressions, work without looking",
+                        "id": 695242715697109,
+                        "title": "Jazz Comping",
+                        "priority": "Med"
+                    },],
                     thursday: [],
-                    friday: [],
+                    friday: [{
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "6",
+                        "description": "Ostinato arpeggio, freely move melodic idea",
+                        "id": 976073037560130,
+                        "title": "Arpeggio comp with free melody",
+                        "priority": "High"
+                    },],
                     saturday: [],
                     totalWeeklyPoints: 0
                 },
@@ -168,20 +688,70 @@ export const userData = {
                     startDate: 'Sun Apr 23 2023',
                     sunday: [],
                     monday: [],
-                    tuesday: [],
+                    tuesday: [{
+                        "pointValue": "4",
+                        "description": "Mood Indigo",
+                        "id": 102838567348913,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Typical progressions, work without looking",
+                        "id": 695242715697109,
+                        "title": "Jazz Comping",
+                        "priority": "Med"
+                    },
+                    {
+                        "pointValue": "5",
+                        "description": "Warm up finger independence",
+                        "id": 515134371356797,
+                        "title": "Technique",
+                        "priority": "High"
+                    },],
                     wednesday: [],
-                    thursday: [],
-                    friday: [],
+                    thursday: [{
+                        "pointValue": "5",
+                        "description": "Unchained Melody",
+                        "id": 809081273797419,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },],
+                    friday: [{
+                        "pointValue": "5",
+                        "description": "Unchained Melody",
+                        "id": 809081273797419,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },],
                     saturday: [],
                     totalWeeklyPoints: 0
                 },
                 {
                     weekNumber: 15,
                     startDate: 'Sun Apr 16 2023',
-                    sunday: [],
+                    sunday: [{
+                        "pointValue": "5",
+                        "description": "Unchained Melody",
+                        "id": 809081273797419,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },],
                     monday: [],
-                    tuesday: [],
-                    wednesday: [],
+                    tuesday: [{
+                        "pointValue": "5",
+                        "description": "Unchained Melody",
+                        "id": 809081273797419,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },],
+                    wednesday: [{
+                        "pointValue": "5",
+                        "description": "Unchained Melody",
+                        "id": 809081273797419,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },],
                     thursday: [],
                     friday: [],
                     saturday: [],
@@ -195,8 +765,20 @@ export const userData = {
                     tuesday: [],
                     wednesday: [],
                     thursday: [],
-                    friday: [],
-                    saturday: [],
+                    friday: [{
+                        "pointValue": "5",
+                        "description": "Unchained Melody",
+                        "id": 809081273797419,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },],
+                    saturday: [{
+                        "pointValue": "5",
+                        "description": "Unchained Melody",
+                        "id": 809081273797419,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },],
                     totalWeeklyPoints: 0
                 },
                 {
@@ -204,11 +786,93 @@ export const userData = {
                     startDate: 'Sun Apr 2 2023',
                     sunday: [],
                     monday: [],
-                    tuesday: [],
+                    tuesday: [{
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Bach WTC Prelude 1",
+                        "id": 289350509717842,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Mozart Sonata",
+                        "id": 370286868930632,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Beyond the Sea",
+                        "id": 753186485460764,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    },
+                    {
+                        "pointValue": "6",
+                        "description": "Find your way by feel alone, speak and sing progressions/melody",
+                        "id": 521632061205478,
+                        "title": "No Sight Playing",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Typical progressions, work without looking",
+                        "id": 695242715697109,
+                        "title": "Jazz Comping",
+                        "priority": "Med"
+                    },],
                     wednesday: [],
                     thursday: [],
                     friday: [],
-                    saturday: [],
+                    saturday: [{
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Bach WTC Prelude 1",
+                        "id": 289350509717842,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Mozart Sonata",
+                        "id": 370286868930632,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Comp in right hand",
+                        "id": 735678486860959,
+                        "title": "Walk a bass line",
+                        "priority": "Med"
+                    },
+                    {
+                        "pointValue": "6",
+                        "description": "Find your way by feel alone, speak and sing progressions/melody",
+                        "id": 521632061205478,
+                        "title": "No Sight Playing",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Typical progressions, work without looking",
+                        "id": 695242715697109,
+                        "title": "Jazz Comping",
+                        "priority": "Med"
+                    },],
                     totalWeeklyPoints: 0
                 },
                 {
@@ -216,21 +880,119 @@ export const userData = {
                     startDate: 'Sun Mar 26 2023',
                     sunday: [],
                     monday: [],
-                    tuesday: [],
+                    tuesday: [{
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "6",
+                        "description": "Find your way by feel alone, speak and sing progressions/melody",
+                        "id": 521632061205478,
+                        "title": "No Sight Playing",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Typical progressions, work without looking",
+                        "id": 695242715697109,
+                        "title": "Jazz Comping",
+                        "priority": "Med"
+                    },
+                    {
+                        "pointValue": "5",
+                        "description": "Warm up finger independence",
+                        "id": 515134371356797,
+                        "title": "Technique",
+                        "priority": "High"
+                    },],
                     wednesday: [],
                     thursday: [],
-                    friday: [],
+                    friday: [{
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "6",
+                        "description": "Find your way by feel alone, speak and sing progressions/melody",
+                        "id": 521632061205478,
+                        "title": "No Sight Playing",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Typical progressions, work without looking",
+                        "id": 695242715697109,
+                        "title": "Jazz Comping",
+                        "priority": "Med"
+                    },
+                    {
+                        "pointValue": "5",
+                        "description": "Warm up finger independence",
+                        "id": 515134371356797,
+                        "title": "Technique",
+                        "priority": "High"
+                    },],
                     saturday: [],
                     totalWeeklyPoints: 0
                 },
                 {
                     weekNumber: 11,
                     startDate: 'Sun Mar 26 2023',
-                    sunday: [],
-                    monday: [],
-                    tuesday: [],
+                    sunday: [{
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    },],
+                    monday: [{
+                        "pointValue": "6",
+                        "description": "Find your way by feel alone, speak and sing progressions/melody",
+                        "id": 521632061205478,
+                        "title": "No Sight Playing",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Typical progressions, work without looking",
+                        "id": 695242715697109,
+                        "title": "Jazz Comping",
+                        "priority": "Med"
+                    },],
+                    tuesday: [{
+                        "pointValue": "6",
+                        "description": "App or approachable music",
+                        "id": 758607329478910,
+                        "title": "Sight Reading",
+                        "priority": "High"
+                    },],
                     wednesday: [],
-                    thursday: [],
+                    thursday: [{
+                        "pointValue": "6",
+                        "description": "Find your way by feel alone, speak and sing progressions/melody",
+                        "id": 521632061205478,
+                        "title": "No Sight Playing",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Typical progressions, work without looking",
+                        "id": 695242715697109,
+                        "title": "Jazz Comping",
+                        "priority": "Med"
+                    },],
                     friday: [],
                     saturday: [],
                     totalWeeklyPoints: 0
@@ -238,24 +1000,155 @@ export const userData = {
                 {
                     weekNumber: 10,
                     startDate: 'Sun Mar 19 2023',
-                    sunday: [],
+                    sunday: [{
+                        "pointValue": "6",
+                        "description": "App or approachable music",
+                        "id": 758607329478910,
+                        "title": "Sight Reading",
+                        "priority": "High"
+                    },],
                     monday: [],
-                    tuesday: [],
-                    wednesday: [],
+                    tuesday: [{
+                        "pointValue": "6",
+                        "description": "App or approachable music",
+                        "id": 758607329478910,
+                        "title": "Sight Reading",
+                        "priority": "High"
+                    },],
+                    wednesday: [{
+                        "pointValue": "6",
+                        "description": "App or approachable music",
+                        "id": 758607329478910,
+                        "title": "Sight Reading",
+                        "priority": "High"
+                    },],
                     thursday: [],
                     friday: [],
-                    saturday: [],
+                    saturday: [{
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Beyond the Sea",
+                        "id": 753186485460764,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    },
+                    {
+                        "pointValue": "6",
+                        "description": "Find your way by feel alone, speak and sing progressions/melody",
+                        "id": 521632061205478,
+                        "title": "No Sight Playing",
+                        "priority": "High"
+                    },],
                     totalWeeklyPoints: 0
                 },
                 {
                     weekNumber: 9,
                     startDate: 'Sun Mar 12 2023',
-                    sunday: [],
+                    sunday: [{
+                        "pointValue": "4",
+                        "description": "Beyond the Sea",
+                        "id": 753186485460764,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    }, {
+                        "pointValue": "5",
+                        "description": "Unchained Melody",
+                        "id": 809081273797419,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "5",
+                        "description": "Warm up finger independence",
+                        "id": 515134371356797,
+                        "title": "Technique",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "6",
+                        "description": "App or approachable music",
+                        "id": 758607329478910,
+                        "title": "Sight Reading",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "6",
+                        "description": "Find your way by feel alone, speak and sing progressions/melody",
+                        "id": 521632061205478,
+                        "title": "No Sight Playing",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Typical progressions, work without looking",
+                        "id": 695242715697109,
+                        "title": "Jazz Comping",
+                        "priority": "Med"
+                    },],
                     monday: [],
-                    tuesday: [],
+                    tuesday: [{
+                        "pointValue": "4",
+                        "description": "Beyond the Sea",
+                        "id": 753186485460764,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    },
+                    {
+                        "pointValue": "6",
+                        "description": "App or approachable music",
+                        "id": 758607329478910,
+                        "title": "Sight Reading",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "6",
+                        "description": "Find your way by feel alone, speak and sing progressions/melody",
+                        "id": 521632061205478,
+                        "title": "No Sight Playing",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Typical progressions, work without looking",
+                        "id": 695242715697109,
+                        "title": "Jazz Comping",
+                        "priority": "Med"
+                    },],
                     wednesday: [],
                     thursday: [],
-                    friday: [],
+                    friday: [{
+                        "pointValue": "4",
+                        "description": "Beyond the Sea",
+                        "id": 753186485460764,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    },
+                    {
+                        "pointValue": "6",
+                        "description": "App or approachable music",
+                        "id": 758607329478910,
+                        "title": "Sight Reading",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "6",
+                        "description": "Find your way by feel alone, speak and sing progressions/melody",
+                        "id": 521632061205478,
+                        "title": "No Sight Playing",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Typical progressions, work without looking",
+                        "id": 695242715697109,
+                        "title": "Jazz Comping",
+                        "priority": "Med"
+                    },],
                     saturday: [],
                     totalWeeklyPoints: 0
                 },
@@ -264,21 +1157,153 @@ export const userData = {
                     startDate: 'Sun Mar 5 2023',
                     sunday: [],
                     monday: [],
-                    tuesday: [],
+                    tuesday: [{
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Debussy Arabesque No. 1",
+                        "id": 624276301093814,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Ravel Pavane pour une Infante Defuncte",
+                        "id": 134121031794120,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    },],
                     wednesday: [],
-                    thursday: [],
+                    thursday: [{
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Debussy Arabesque No. 1",
+                        "id": 624276301093814,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Ravel Pavane pour une Infante Defuncte",
+                        "id": 134121031794120,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    },],
                     friday: [],
-                    saturday: [],
+                    saturday: [{
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Debussy Arabesque No. 1",
+                        "id": 624276301093814,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Ravel Pavane pour une Infante Defuncte",
+                        "id": 134121031794120,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    },],
                     totalWeeklyPoints: 0
                 },
                 {
                     weekNumber: 7,
                     startDate: 'Sun Feb 26 2023',
-                    sunday: [],
-                    monday: [],
-                    tuesday: [],
-                    wednesday: [],
-                    thursday: [],
+                    sunday: [{
+                        "pointValue": "4",
+                        "description": "Mozart Sonata",
+                        "id": 370286868930632,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    }, {
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "4",
+                        "description": "Bach WTC Prelude 1",
+                        "id": 289350509717842,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "4",
+                        "description": "Beyond the Sea",
+                        "id": 753186485460764,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    },],
+                    monday: [{
+                        "pointValue": "4",
+                        "description": "Mozart Sonata",
+                        "id": 370286868930632,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    }, {
+                        "pointValue": "4",
+                        "description": "Typical progressions, work without looking",
+                        "id": 695242715697109,
+                        "title": "Jazz Comping",
+                        "priority": "Med"
+                    },],
+                    tuesday: [{
+                        "pointValue": "4",
+                        "description": "Beyond the Sea",
+                        "id": 753186485460764,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    }, {
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "4",
+                        "description": "Typical progressions, work without looking",
+                        "id": 695242715697109,
+                        "title": "Jazz Comping",
+                        "priority": "Med"
+                    },],
+                    wednesday: [{
+                        "pointValue": "6",
+                        "description": "Ostinato arpeggio, freely move melodic idea",
+                        "id": 976073037560130,
+                        "title": "Arpeggio comp with free melody",
+                        "priority": "High"
+                    },],
+                    thursday: [{
+                        "pointValue": "4",
+                        "description": "Mozart Sonata",
+                        "id": 370286868930632,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    }, {
+                        "pointValue": "4",
+                        "description": "Bach WTC Prelude 1",
+                        "id": 289350509717842,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },],
                     friday: [],
                     saturday: [],
                     totalWeeklyPoints: 0
@@ -286,73 +1311,585 @@ export const userData = {
                 {
                     weekNumber: 6,
                     startDate: 'Sun Feb 19 2023',
-                    sunday: [],
+                    sunday: [{
+                        "pointValue": "6",
+                        "description": "Find your way by feel alone, speak and sing progressions/melody",
+                        "id": 521632061205478,
+                        "title": "No Sight Playing",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "5",
+                        "description": "Warm up finger independence",
+                        "id": 515134371356797,
+                        "title": "Technique",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    },],
                     monday: [],
                     tuesday: [],
-                    wednesday: [],
-                    thursday: [],
+                    wednesday: [{
+                        "pointValue": "4",
+                        "description": "Bach WTC Prelude 1",
+                        "id": 289350509717842,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "5",
+                        "description": "Warm up finger independence",
+                        "id": 515134371356797,
+                        "title": "Technique",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Mozart Sonata",
+                        "id": 370286868930632,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    }, {
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    },],
+                    thursday: [{
+                        "pointValue": "4",
+                        "description": "Bach WTC Prelude 1",
+                        "id": 289350509717842,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Mozart Sonata",
+                        "id": 370286868930632,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    },],
                     friday: [],
-                    saturday: [],
+                    saturday: [{
+                        "pointValue": "4",
+                        "description": "Bach WTC Prelude 1",
+                        "id": 289350509717842,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Mozart Sonata",
+                        "id": 370286868930632,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    },],
                     totalWeeklyPoints: 0
                 },
                 {
                     weekNumber: 5,
                     startDate: 'Sun Feb 12 2023',
-                    sunday: [],
+                    sunday: [{
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "4",
+                        "description": "Bach WTC Prelude 1",
+                        "id": 289350509717842,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },],
                     monday: [],
-                    tuesday: [],
+                    tuesday: [{
+                        "pointValue": "4",
+                        "description": "Typical progressions, work without looking",
+                        "id": 695242715697109,
+                        "title": "Jazz Comping",
+                        "priority": "Med"
+                    },],
                     wednesday: [],
-                    thursday: [],
-                    friday: [],
-                    saturday: [],
+                    thursday: [{
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "4",
+                        "description": "Bach WTC Prelude 1",
+                        "id": 289350509717842,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Mozart Sonata",
+                        "id": 370286868930632,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    },],
+                    friday: [{
+                        "pointValue": "4",
+                        "description": "Beyond the Sea",
+                        "id": 753186485460764,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    },],
+                    saturday: [{
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    },],
                     totalWeeklyPoints: 0
                 },
                 {
                     weekNumber: 4,
                     startDate: 'Sun Feb 5 2023',
-                    sunday: [],
-                    monday: [],
-                    tuesday: [],
-                    wednesday: [],
-                    thursday: [],
-                    friday: [],
+                    sunday: [{
+                        "pointValue": "4",
+                        "description": "Bach WTC Prelude 1",
+                        "id": 289350509717842,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Mozart Sonata",
+                        "id": 370286868930632,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    }, {
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    },],
+                    monday: [{
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "4",
+                        "description": "Beyond the Sea",
+                        "id": 753186485460764,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    }, {
+                        "pointValue": "5",
+                        "description": "Warm up finger independence",
+                        "id": 515134371356797,
+                        "title": "Technique",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "5",
+                        "description": "Unfamilar key work - move through typical patterns",
+                        "id": 518416483908063,
+                        "title": "Layout",
+                        "priority": "Med"
+                    },
+
+
+                    ],
+                    tuesday: [{
+                        "pointValue": "6",
+                        "description": "App or approachable music",
+                        "id": 758607329478910,
+                        "title": "Sight Reading",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Bach WTC Prelude 1",
+                        "id": 289350509717842,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Mozart Sonata",
+                        "id": 370286868930632,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    }, {
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "5",
+                        "description": "Warm up finger independence",
+                        "id": 515134371356797,
+                        "title": "Technique",
+                        "priority": "High"
+                    },
+                    ],
+                    wednesday: [{
+                        "pointValue": "4",
+                        "description": "Beyond the Sea",
+                        "id": 753186485460764,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    },
+                    ],
+                    thursday: [{
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "5",
+                        "description": "Unfamilar key work - move through typical patterns",
+                        "id": 518416483908063,
+                        "title": "Layout",
+                        "priority": "Med"
+                    },
+                    ],
+                    friday: [{
+                        "pointValue": "4",
+                        "description": "Bach WTC Prelude 1",
+                        "id": 289350509717842,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Mozart Sonata",
+                        "id": 370286868930632,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    }, {
+                        "pointValue": "5",
+                        "description": "Unfamilar key work - move through typical patterns",
+                        "id": 518416483908063,
+                        "title": "Layout",
+                        "priority": "Med"
+                    },
+                    ],
                     saturday: [],
                     totalWeeklyPoints: 0
                 },
                 {
                     weekNumber: 3,
                     startDate: 'Sun Jan 29 2023',
-                    sunday: [],
+                    sunday: [{
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "4",
+                        "description": "Beyond the Sea",
+                        "id": 753186485460764,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    },
+
+                    ],
                     monday: [],
-                    tuesday: [],
-                    wednesday: [],
-                    thursday: [],
-                    friday: [],
-                    saturday: [],
+                    tuesday: [{
+                        "pointValue": "4",
+                        "description": "Bach WTC Prelude 1",
+                        "id": 289350509717842,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "5",
+                        "description": "Warm up finger independence",
+                        "id": 515134371356797,
+                        "title": "Technique",
+                        "priority": "High"
+                    },
+
+                    ],
+                    wednesday: [{
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "4",
+                        "description": "Beyond the Sea",
+                        "id": 753186485460764,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    }, {
+                        "pointValue": "5",
+                        "description": "Warm up finger independence",
+                        "id": 515134371356797,
+                        "title": "Technique",
+                        "priority": "High"
+                    },
+
+
+                    ],
+                    thursday: [{
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "4",
+                        "description": "Bach WTC Prelude 1",
+                        "id": 289350509717842,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "5",
+                        "description": "Warm up finger independence",
+                        "id": 515134371356797,
+                        "title": "Technique",
+                        "priority": "High"
+                    },
+
+
+                    ],
+                    friday: [{
+                        "pointValue": "4",
+                        "description": "Bach WTC Prelude 1",
+                        "id": 289350509717842,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },
+                    ],
+                    saturday: [{
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "4",
+                        "description": "Bach WTC Prelude 1",
+                        "id": 289350509717842,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "4",
+                        "description": "Beyond the Sea",
+                        "id": 753186485460764,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    }, {
+                        "pointValue": "5",
+                        "description": "Warm up finger independence",
+                        "id": 515134371356797,
+                        "title": "Technique",
+                        "priority": "High"
+                    },
+
+
+
+                    ],
                     totalWeeklyPoints: 0
                 },
                 {
                     weekNumber: 2,
                     startDate: 'Sun Jan 22 2023',
                     sunday: [],
-                    monday: [],
+                    monday: [{
+                        "pointValue": "5",
+                        "description": "Warm up finger independence",
+                        "id": 515134371356797,
+                        "title": "Technique",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "6",
+                        "description": "Find your way by feel alone, speak and sing progressions/melody",
+                        "id": 521632061205478,
+                        "title": "No Sight Playing",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "4",
+                        "description": "Beyond the Sea",
+                        "id": 753186485460764,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    }, {
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    },
+
+
+
+                    ],
                     tuesday: [],
-                    wednesday: [],
-                    thursday: [],
-                    friday: [],
-                    saturday: [],
+                    wednesday: [{
+                        "pointValue": "5",
+                        "description": "Unfamilar key work - move through typical patterns",
+                        "id": 518416483908063,
+                        "title": "Layout",
+                        "priority": "Med"
+                    }, {
+                        "pointValue": "5",
+                        "description": "Warm up finger independence",
+                        "id": 515134371356797,
+                        "title": "Technique",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "4",
+                        "description": "Bach WTC Prelude 1",
+                        "id": 289350509717842,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },
+
+
+                    ],
+                    thursday: [{
+                        "pointValue": "5",
+                        "description": "Unfamilar key work - move through typical patterns",
+                        "id": 518416483908063,
+                        "title": "Layout",
+                        "priority": "Med"
+                    }, {
+                        "pointValue": "5",
+                        "description": "Warm up finger independence",
+                        "id": 515134371356797,
+                        "title": "Technique",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "4",
+                        "description": "Bach WTC Prelude 1",
+                        "id": 289350509717842,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    },
+
+
+
+                    ],
+                    friday: [{
+                        "pointValue": "5",
+                        "description": "Warm up finger independence",
+                        "id": 515134371356797,
+                        "title": "Technique",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "4",
+                        "description": "Bach WTC Prelude 1",
+                        "id": 289350509717842,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },
+
+                    ],
+                    saturday: [{
+                        "pointValue": "5",
+                        "description": "Unfamilar key work - move through typical patterns",
+                        "id": 518416483908063,
+                        "title": "Layout",
+                        "priority": "Med"
+                    },
+                    ],
                     totalWeeklyPoints: 0
                 },
                 {
                     weekNumber: 1,
                     startDate: 'Sun Jan 15 2023',
                     sunday: [],
-                    monday: [],
-                    tuesday: [],
+                    monday: [{
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    },],
+                    tuesday: [{
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    },],
                     wednesday: [],
-                    thursday: [],
-                    friday: [],
-                    saturday: [],
+                    thursday: [{
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "4",
+                        "description": "Beyond the Sea",
+                        "id": 753186485460764,
+                        "title": "Repertoire",
+                        "priority": "Med"
+                    },
+                    {
+                        "pointValue": "5",
+                        "description": "No-look activity, both hands",
+                        "id": 389783703731953,
+                        "title": "Accurate leaps",
+                        "priority": "High"
+                    }
+                    ],
+                    friday: [{
+                        "pointValue": "4",
+                        "description": "Bach WTC Prelude 1",
+                        "id": 289350509717842,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "6",
+                        "description": "Find your way by feel alone, speak and sing progressions/melody",
+                        "id": 521632061205478,
+                        "title": "No Sight Playing",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "4",
+                        "description": "Typical progressions, work without looking",
+                        "id": 695242715697109,
+                        "title": "Jazz Comping",
+                        "priority": "Med"
+                    },
+                    ],
+                    saturday: [{
+                        "pointValue": "5",
+                        "description": "Go up and down 1 key, all hand combos",
+                        "id": 928202386728434,
+                        "title": "Scales",
+                        "priority": "High"
+                    }, {
+                        "pointValue": "4",
+                        "description": "Bach WTC Prelude 1",
+                        "id": 289350509717842,
+                        "title": "Repertoire",
+                        "priority": "High"
+                    },
+                    {
+                        "pointValue": "5",
+                        "description": "No-look activity, both hands",
+                        "id": 389783703731953,
+                        "title": "Accurate leaps",
+                        "priority": "High"
+                    }
+                    ],
                     totalWeeklyPoints: 0
                 },
                 {
@@ -477,7 +2014,7 @@ export const userData = {
                 },
                 {
                     "pointValue": "5",
-                    "description": "Warm up independence",
+                    "description": "Warm up finger independence",
                     "id": 515134371356797,
                     "title": "Technique",
                     "priority": "High"
@@ -579,8 +2116,22 @@ export const userData = {
                     "id": 389783703731953,
                     "title": "Accurate leaps",
                     "priority": "High"
-                }
-            
+                },
+                {
+                    "pointValue": "5",
+                    "description": "Unchained Melody",
+                    "id": 809081273797419,
+                    "title": "Repertoire",
+                    "priority": "High"
+                },
+                {
+                    "pointValue": "6",
+                    "description": "Variable-height key rolls",
+                    "id": 809081279397419,
+                    "title": "Technique",
+                    "priority": "High"
+                },
+
 
             ]
         },

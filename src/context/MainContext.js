@@ -6,9 +6,10 @@ export const MainContext = createContext()
 
 export const initialMainState = {
   userObj: null,
-  userData: userData,
+  userData: null,
   currentTrainerID: null,
-  daysTaskOutput: []
+  daysTaskOutput: [],
+  historyReady: false
 }
 
 export const MainReducer = (state, action) => {
@@ -76,7 +77,7 @@ export const MainReducer = (state, action) => {
 
     case 'ADD_TASK_TO_HISTORY': {
       console.log(`Trace: ADD_TASK_TO_HISTORY()`)
-
+      // debugger
       const history = state.userData.trainers.filter(trainer => trainer.id === action.payload.currentTrainerID)[0].history
       history[0] = action.payload.mostRecentWeek
       const updatedUserData = {
@@ -91,7 +92,7 @@ export const MainReducer = (state, action) => {
           return trainer;
         }),
       };
-
+      // debugger
       saveUserDataToDB(action.payload.userUID, updatedUserData)
       return {
         ...state,
@@ -108,12 +109,21 @@ export const MainReducer = (state, action) => {
       }
     }
 
-    case 'ADD_EMPTY_WEEK': {
-      console.log(`Trace: ADD_EMPTY_WEEK()`)
-      userData.trainers.filter(entry => entry.id === action.payload.currentTrainerID)[0].history.unshift(action.payload.successiveEmptyWeek)
+    // case 'ADD_EMPTY_WEEK': {
+    //   console.log(`Trace: ADD_EMPTY_WEEK()`)
+    //   console.log(action.payload)
+    //   let updatedUserData = userData.trainers.filter(entry => entry.id === action.payload.currentTrainerID)[0].history.unshift(action.payload.successiveEmptyWeek)
+    //   return {
+    //     ...state,
+    //     userData: updatedUserData
+    //   }
+    // }
+
+    case 'SET_HISTORY_READY': {
+      console.log(`Trace: SET_HISTORY_READY()`)
       return {
         ...state,
-        userData
+        historyReady: true
       }
     }
 

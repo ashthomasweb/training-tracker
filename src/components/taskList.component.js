@@ -40,7 +40,6 @@ export const TaskList = () => {
         const daysOfWeek = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
         const currentDayName = daysOfWeek[currentDayOfWeekIndex];
         mostRecentWeek[currentDayName].push(selectedTask)
-        console.log(mostRecentWeek)
 
         const payload = {
             currentTrainerID,
