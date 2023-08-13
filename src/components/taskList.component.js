@@ -1,6 +1,5 @@
 import { useContext } from "react"
 import { MainContext } from "../context/MainContext"
-import { saveUserDataToDB } from "../firebase"
 
 export const TaskList = () => {
     const { state: { currentTrainerID, userData, userObj }, dispatch } = useContext(MainContext)

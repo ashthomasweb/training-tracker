@@ -5,11 +5,9 @@ export const DaysTaskOutput = () => {
     const { state: { daysTaskOutput } } = useContext(MainContext)
 
     const taskDisplay = (task) => {
-
         return (
             <table>
                 <tbody>
-
                     <tr>
                         <td>Title:</td>
                         <td><strong>{task.title}</strong></td>

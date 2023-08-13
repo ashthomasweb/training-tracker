@@ -42,11 +42,8 @@ export const Week = (props) => {
     }
 
     const dayArray = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
+
     function Day(index) {
-        // console.log('Trace: Day()')
-        // let date = new Date(currentTrainerHistory.startDate)
-        // let day = date.getDate()
-        // console.log(day)
         return (
             <div
                 onClick={getDailyInfo}
@@ -56,28 +53,12 @@ export const Week = (props) => {
                         ? colorHandler(currentTrainerHistory[dayArray[index]])
                         : 'white'
                         }`,
-                    // outline: `${day === 1 ? '1px solid black!important' : 'none'}`
                 }}
             />
         )
     }
 
     function showMonth() {
-        let daysSinceLastSatEntry = 0
-        let weeksSinceLastSat = 0
-        let newDate
-
-        function isDateMoreThanAWeekOld(dateToCheck) {
-            console.log(`Trace: isDateMoreThanAWeekOld`)
-
-            const oneWeekAgo = new Date();
-            oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
-            daysSinceLastSatEntry = (oneWeekAgo - dateToCheck) / 1000 / 60 / 60 / 24 + 7
-            weeksSinceLastSat = ((daysSinceLastSatEntry % 7) - daysSinceLastSatEntry) / 7
-            return dateToCheck < oneWeekAgo;
-        }
-
-
         let date = new Date(currentTrainerHistory.startDate)
         let day = date.getDate()
         if (day <= 7) {
@@ -88,8 +69,6 @@ export const Week = (props) => {
             )
         }
     }
-
-    // showMonth()
 
     return (
 

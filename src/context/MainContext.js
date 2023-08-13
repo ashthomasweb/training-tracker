@@ -77,7 +77,6 @@ export const MainReducer = (state, action) => {
 
     case 'ADD_TASK_TO_HISTORY': {
       console.log(`Trace: ADD_TASK_TO_HISTORY()`)
-      // debugger
       const history = state.userData.trainers.filter(trainer => trainer.id === action.payload.currentTrainerID)[0].history
       history[0] = action.payload.mostRecentWeek
       const updatedUserData = {
@@ -92,7 +91,6 @@ export const MainReducer = (state, action) => {
           return trainer;
         }),
       };
-      // debugger
       saveUserDataToDB(action.payload.userUID, updatedUserData)
       return {
         ...state,
