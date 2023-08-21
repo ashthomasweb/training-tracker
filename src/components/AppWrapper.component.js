@@ -23,10 +23,8 @@ export const AppWrapper = () => {
             if (userAuth) {
                 await userInitializationHandler(userAuth, dispatch, unSubAuth)
                 await gatherUserDataFromDB(userAuth, dispatch)
-
                 
             } else if (userAuth === null) {
-                console.log('fail')
                 dispatch({
                     type: 'SET_CURRENT_USER_TO_STATE',
                     payload: { userObj: userAuth },

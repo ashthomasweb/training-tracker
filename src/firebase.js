@@ -30,6 +30,8 @@ import {
   onSnapshot,
 } from 'firebase/firestore'
 
+import weekChecker from './utilities/weekChecker'
+
 let firebaseConfig = {
   apiKey: process.env.REACT_APP_API_KEY,
   authDomain: process.env.REACT_APP_AUTH_DOMAIN,
@@ -118,7 +120,8 @@ export const gatherUserDataFromDB = async (userAuth, dispatch) => {
   userBoardSnapshot.forEach((doc) => {
     userDataArray.push(doc.data())
   })
-  dispatch({ type: 'SET_USERLISTS', payload: { userDataArray: userDataArray } })
+  const updatedUserData = weekChecker(dispatch, userDataArray)
+  dispatch({ type: 'SET_USERLISTS', payload: { userDataArray: updatedUserData } })
 }
 
 export const saveUserDataToDB = async (userUID, userDataObj) => {
