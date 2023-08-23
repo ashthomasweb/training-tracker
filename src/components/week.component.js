@@ -12,6 +12,8 @@ export const Week = (props) => {
     let standardGreen = '#3292ff'
     let darkGreen = '#227dff'
     let gold = '#ffd600'
+    let purple = '#b22cff'
+    let perfect = '#000000'
 
     const colorHandler = (dailyInput) => {
         let dailyTotal = 0
@@ -19,20 +21,26 @@ export const Week = (props) => {
             element !== null && (dailyTotal = Number(dailyTotal) + Number(element.pointValue))
         });
 
-        if (dailyTotal > 0 & dailyTotal <= 10) {
+        if (dailyTotal > 0 & dailyTotal <= 12) {
             return lightGreen
         }
-        if (dailyTotal > 10 & dailyTotal <= 20) {
+        if (dailyTotal > 12 & dailyTotal <= 24) {
             return mediumGreen
         }
-        if (dailyTotal > 20 & dailyTotal <= 30) {
+        if (dailyTotal > 24 & dailyTotal <= 36) {
             return standardGreen
         }
-        if (dailyTotal > 30 & dailyTotal <= 40) {
+        if (dailyTotal > 36 & dailyTotal <= 49) {
             return darkGreen
         }
-        if (dailyTotal > 40) {
+        if (dailyTotal > 49 & dailyTotal <= 75) {
             return gold
+        }
+        if (dailyTotal > 75 & dailyTotal <= 99) {
+            return purple
+        }
+        if (dailyTotal >  99) {
+            return perfect
         }
 
     }
