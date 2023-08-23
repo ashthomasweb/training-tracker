@@ -9,467 +9,467 @@ export const userData = {
           "seconds": 1691943170
         },
         "history": [
-          {
-            "sunday": [
-              {
-                "id": 976073037560130,
-                "title": "Arpeggio comp with free melody",
-                "priority": "High",
-                "description": "Ostinato arpeggio, freely move melodic idea",
-                "pointValue": "6"
-              },
-              {
-                "priority": "High",
-                "id": 815679367393136,
-                "pointValue": "7",
-                "title": "Technique",
-                "description": "Ring finger alternating lifts"
-              },
-              {
-                "id": 837943170368712,
-                "description": "Full Circle M/m triad in position 5 finger pattern",
-                "pointValue": "10",
-                "title": "Technique",
-                "priority": "High"
-              },
-              {
-                "description": "Read from two-handed stave",
-                "priority": "High",
-                "title": "Rhythmic Independence",
-                "pointValue": "5",
-                "id": 504971294852590
-              },
-              {
-                "pointValue": "5",
-                "priority": "High",
-                "id": 515134371356797,
-                "title": "Technique",
-                "description": "Warm up finger independence"
-              },
-              {
-                "title": "No Sight Playing",
-                "description": "Find your way by feel alone, speak and sing progressions/melody",
-                "pointValue": "6",
-                "priority": "High",
-                "id": 521632061205478
-              },
-              {
-                "pointValue": "6",
-                "priority": "High",
-                "title": "Sight Reading",
-                "id": 758607329478910,
-                "description": "App or approachable music"
-              },
-              {
-                "id": 758607329478910,
-                "pointValue": "6",
-                "title": "Sight Reading",
-                "description": "App or approachable music",
-                "priority": "High"
-              }
-            ],
-            "tuesday": [
-              {
-                "pointValue": "20",
-                "id": 593943241540254,
-                "priority": "High",
-                "title": "Scales",
-                "description": "Full circle"
-              },
-              {
-                "description": "Full Circle M/m triad in position 5 finger pattern",
-                "priority": "High",
-                "id": 837943170368712,
-                "title": "Technique",
-                "pointValue": "10"
-              },
-              {
-                "description": "5-finger adjacent pattern with step-wise shift",
-                "priority": "Medium",
-                "title": "Technique",
-                "pointValue": "5",
-                "id": 282319413572487
-              },
-              {
-                "id": 815679367393136,
-                "title": "Technique",
-                "description": "Ring finger alternating lifts",
-                "priority": "High",
-                "pointValue": "7"
-              },
-              {
-                "id": 758607329478910,
-                "title": "Sight Reading",
-                "priority": "High",
-                "description": "App or approachable music",
-                "pointValue": "6"
-              },
-              {
-                "title": "Sight Reading",
-                "description": "App or approachable music",
-                "id": 758607329478910,
-                "pointValue": "6",
-                "priority": "High"
-              },
-              {
-                "description": "App or approachable music",
-                "title": "Sight Reading",
-                "priority": "High",
-                "id": 758607329478910,
-                "pointValue": "6"
-              }
-            ],
-            "totalWeeklyPoints": 0,
-            "friday": [],
-            "weekNumber": 33,
-            "monday": [
-              {
-                "title": "Technique",
-                "priority": "Med",
-                "pointValue": "4",
-                "description": "Full-hand stretch over dim7",
-                "id": 425150171369425
-              },
-              {
-                "id": 758607329478910,
-                "priority": "High",
-                "description": "App or approachable music",
-                "title": "Sight Reading",
-                "pointValue": "6"
-              },
-              {
-                "description": "Ring finger alternating lifts",
-                "id": 815679367393136,
-                "priority": "High",
-                "title": "Technique",
-                "pointValue": "7"
-              },
-              {
-                "title": "Technique",
-                "id": 837943170368712,
-                "pointValue": "10",
-                "description": "Full Circle M/m triad in position 5 finger pattern",
-                "priority": "High"
-              }
-            ],
-            "wednesday": [],
-            "thursday": [],
-            "startDate": "Sun Aug 20 2023",
-            "saturday": []
-          },
-          {
-            "weekNumber": 32,
-            "monday": [
-              {
-                "title": "Arpeggio comp with free melody",
-                "id": 976073037560130,
-                "description": "Ostinato arpeggio, freely move melodic idea",
-                "priority": "High",
-                "pointValue": "6"
-              },
-              {
-                "priority": "High",
-                "title": "No Sight Playing",
-                "pointValue": "6",
-                "id": 521632061205478,
-                "description": "Find your way by feel alone, speak and sing progressions/melody"
-              },
-              {
-                "id": 695242715697109,
-                "description": "Typical progressions, work without looking",
-                "title": "Jazz Comping",
-                "pointValue": "4",
-                "priority": "Med"
-              },
-              {
-                "description": "Warm up finger independence",
-                "id": 515134371356797,
-                "priority": "High",
-                "pointValue": "5",
-                "title": "Technique"
-              }
-            ],
-            "friday": [
-              {
-                "pointValue": "6",
-                "title": "Sight Reading",
-                "id": 758607329478910,
-                "priority": "High",
-                "description": "App or approachable music"
-              },
-              {
-                "title": "Sight Reading",
-                "id": 758607329478910,
-                "pointValue": "6",
-                "priority": "High",
-                "description": "App or approachable music"
-              }
-            ],
-            "saturday": [
-              {
-                "pointValue": "4",
-                "description": "Bach WTC Prelude 1",
-                "title": "Repertoire",
-                "id": 289350509717842,
-                "priority": "High"
-              },
-              {
-                "title": "Sight Reading",
-                "pointValue": "6",
-                "priority": "High",
-                "description": "App or approachable music",
-                "id": 758607329478910
-              },
-              {
-                "pointValue": "6",
-                "id": 758607329478910,
-                "description": "App or approachable music",
-                "title": "Sight Reading",
-                "priority": "High"
-              },
-              {
-                "priority": "High",
-                "title": "Sight Reading",
-                "pointValue": "6",
-                "id": 758607329478910,
-                "description": "App or approachable music"
-              },
-              {
-                "description": "App or approachable music",
-                "pointValue": "6",
-                "priority": "High",
-                "id": 758607329478910,
-                "title": "Sight Reading"
-              },
-              {
-                "title": "No Sight Playing",
-                "priority": "High",
-                "pointValue": "6",
-                "description": "Find your way by feel alone, speak and sing progressions/melody",
-                "id": 521632061205478
-              },
-              {
-                "priority": "High",
-                "pointValue": "5",
-                "title": "Technique",
-                "id": 515134371356797,
-                "description": "Warm up finger independence"
-              },
-              {
-                "description": "Warm up finger independence",
-                "priority": "High",
-                "title": "Technique",
-                "pointValue": "5",
-                "id": 515134371356797
-              },
-              {
-                "priority": "Med",
-                "description": "Full-hand stretch over dim7",
-                "title": "Technique",
-                "pointValue": "4",
-                "id": 425150171369425
-              },
-              {
-                "pointValue": "10",
-                "description": "Full Circle M/m triad in position 5 finger pattern",
-                "id": 837943170368712,
-                "priority": "High",
-                "title": "Technique"
-              },
-              {
-                "priority": "Medium",
-                "title": "Technique",
-                "pointValue": "5",
-                "description": "5-finger adjacent pattern with step-wise shift",
-                "id": 282319413572487
-              },
-              {
-                "description": "Ring finger alternating lifts",
-                "priority": "High",
-                "id": 815679367393136,
-                "title": "Technique",
-                "pointValue": "7"
-              }
-            ],
-            "thursday": [
-              {
-                "description": "Bach WTC Prelude 1",
-                "priority": "High",
-                "pointValue": "4",
-                "title": "Repertoire",
-                "id": 289350509717842
-              },
-              {
-                "id": 758607329478910,
-                "pointValue": "6",
-                "priority": "High",
-                "title": "Sight Reading",
-                "description": "App or approachable music"
-              },
-              {
-                "priority": "High",
-                "pointValue": "5",
-                "title": "Technique",
-                "description": "Warm up finger independence",
-                "id": 515134371356797
-              },
-              {
-                "description": "Full-hand stretch over dim7",
-                "priority": "Med",
-                "id": 425150171369425,
-                "pointValue": "4",
-                "title": "Technique"
-              },
-              {
-                "priority": "Med",
-                "id": 809081273797419,
-                "title": "Repertoire",
-                "pointValue": "4",
-                "description": "Blue Skies"
-              },
-              {
-                "id": 837943170368712,
-                "pointValue": "10",
-                "priority": "High",
-                "description": "Full Circle M/m triad in position 5 finger pattern",
-                "title": "Technique"
-              }
-            ],
-            "tuesday": [
-              {
-                "id": 425150171369425,
-                "description": "Full-hand stretch over dim7",
-                "pointValue": "4",
-                "title": "Technique",
-                "priority": "Med"
-              },
-              {
-                "pointValue": "6",
-                "title": "Sight Reading",
-                "description": "App or approachable music",
-                "priority": "High",
-                "id": 758607329478910
-              },
-              {
-                "id": 289350509717842,
-                "pointValue": "4",
-                "priority": "High",
-                "description": "Bach WTC Prelude 1",
-                "title": "Repertoire"
-              },
-              {
-                "title": "Technique",
-                "id": 515134371356797,
-                "priority": "High",
-                "pointValue": "5",
-                "description": "Warm up finger independence"
-              },
-              {
-                "description": "Full Circle M/m triad in position 5 finger pattern",
-                "pointValue": "10",
-                "title": "Technique",
-                "id": 837943170368712,
-                "priority": "High"
-              },
-              {
-                "id": 976073037560130,
-                "description": "Ostinato arpeggio, freely move melodic idea",
-                "pointValue": "6",
-                "priority": "High",
-                "title": "Arpeggio comp with free melody"
-              }
-            ],
-            "sunday": [
-              {
-                "title": "Repertoire",
-                "id": 289350509717842,
-                "description": "Bach WTC Prelude 1",
-                "priority": "High",
-                "pointValue": "4"
-              },
-              {
-                "id": 515134371356797,
-                "description": "Warm up finger independence",
-                "pointValue": "5",
-                "title": "Technique",
-                "priority": "High"
-              },
-              {
-                "description": "Full-hand stretch over dim7",
-                "id": 425150171369425,
-                "priority": "Med",
-                "pointValue": "4",
-                "title": "Technique"
-              },
-              {
-                "title": "Repertoire",
-                "priority": "High",
-                "id": 289350509717842,
-                "pointValue": "4",
-                "description": "Bach WTC Prelude 1"
-              },
-              {
-                "id": 593943241540254,
-                "priority": "High",
-                "title": "Scales",
-                "pointValue": "20",
-                "description": "Full circle"
-              },
-              {
-                "title": "Sight Reading",
-                "priority": "High",
-                "id": 758607329478910,
-                "pointValue": "6",
-                "description": "App or approachable music"
-              },
-              {
-                "title": "Sight Reading",
-                "id": 758607329478910,
-                "pointValue": "6",
-                "description": "App or approachable music",
-                "priority": "High"
-              },
-              {
-                "priority": "High",
-                "description": "Read from two-handed stave",
-                "id": 504971294852590,
-                "pointValue": "5",
-                "title": "Rhythmic Independence"
-              },
-              {
-                "description": "Full Circle M/m triad in position 5 finger pattern",
-                "priority": "High",
-                "id": 837943170368712,
-                "pointValue": "10",
-                "title": "Technique"
-              }
-            ],
-            "totalWeeklyPoints": 0,
-            "startDate": "Sun Aug 13 2023",
-            "wednesday": [
-              {
-                "title": "Technique",
-                "priority": "High",
-                "id": 515134371356797,
-                "description": "Warm up finger independence",
-                "pointValue": "5"
-              },
-              {
-                "priority": "Med",
-                "title": "Technique",
-                "id": 425150171369425,
-                "pointValue": "4",
-                "description": "Full-hand stretch over dim7"
-              },
-              {
-                "id": 837943170368712,
-                "priority": "High",
-                "description": "Full Circle M/m triad in position 5 finger pattern",
-                "pointValue": "10",
-                "title": "Technique"
-              }
-            ]
-          },
+          // {
+          //   "sunday": [
+          //     {
+          //       "id": 976073037560130,
+          //       "title": "Arpeggio comp with free melody",
+          //       "priority": "High",
+          //       "description": "Ostinato arpeggio, freely move melodic idea",
+          //       "pointValue": "6"
+          //     },
+          //     {
+          //       "priority": "High",
+          //       "id": 815679367393136,
+          //       "pointValue": "7",
+          //       "title": "Technique",
+          //       "description": "Ring finger alternating lifts"
+          //     },
+          //     {
+          //       "id": 837943170368712,
+          //       "description": "Full Circle M/m triad in position 5 finger pattern",
+          //       "pointValue": "10",
+          //       "title": "Technique",
+          //       "priority": "High"
+          //     },
+          //     {
+          //       "description": "Read from two-handed stave",
+          //       "priority": "High",
+          //       "title": "Rhythmic Independence",
+          //       "pointValue": "5",
+          //       "id": 504971294852590
+          //     },
+          //     {
+          //       "pointValue": "5",
+          //       "priority": "High",
+          //       "id": 515134371356797,
+          //       "title": "Technique",
+          //       "description": "Warm up finger independence"
+          //     },
+          //     {
+          //       "title": "No Sight Playing",
+          //       "description": "Find your way by feel alone, speak and sing progressions/melody",
+          //       "pointValue": "6",
+          //       "priority": "High",
+          //       "id": 521632061205478
+          //     },
+          //     {
+          //       "pointValue": "6",
+          //       "priority": "High",
+          //       "title": "Sight Reading",
+          //       "id": 758607329478910,
+          //       "description": "App or approachable music"
+          //     },
+          //     {
+          //       "id": 758607329478910,
+          //       "pointValue": "6",
+          //       "title": "Sight Reading",
+          //       "description": "App or approachable music",
+          //       "priority": "High"
+          //     }
+          //   ],
+          //   "tuesday": [
+          //     {
+          //       "pointValue": "20",
+          //       "id": 593943241540254,
+          //       "priority": "High",
+          //       "title": "Scales",
+          //       "description": "Full circle"
+          //     },
+          //     {
+          //       "description": "Full Circle M/m triad in position 5 finger pattern",
+          //       "priority": "High",
+          //       "id": 837943170368712,
+          //       "title": "Technique",
+          //       "pointValue": "10"
+          //     },
+          //     {
+          //       "description": "5-finger adjacent pattern with step-wise shift",
+          //       "priority": "Medium",
+          //       "title": "Technique",
+          //       "pointValue": "5",
+          //       "id": 282319413572487
+          //     },
+          //     {
+          //       "id": 815679367393136,
+          //       "title": "Technique",
+          //       "description": "Ring finger alternating lifts",
+          //       "priority": "High",
+          //       "pointValue": "7"
+          //     },
+          //     {
+          //       "id": 758607329478910,
+          //       "title": "Sight Reading",
+          //       "priority": "High",
+          //       "description": "App or approachable music",
+          //       "pointValue": "6"
+          //     },
+          //     {
+          //       "title": "Sight Reading",
+          //       "description": "App or approachable music",
+          //       "id": 758607329478910,
+          //       "pointValue": "6",
+          //       "priority": "High"
+          //     },
+          //     {
+          //       "description": "App or approachable music",
+          //       "title": "Sight Reading",
+          //       "priority": "High",
+          //       "id": 758607329478910,
+          //       "pointValue": "6"
+          //     }
+          //   ],
+          //   "totalWeeklyPoints": 0,
+          //   "friday": [],
+          //   "weekNumber": 33,
+          //   "monday": [
+          //     {
+          //       "title": "Technique",
+          //       "priority": "Med",
+          //       "pointValue": "4",
+          //       "description": "Full-hand stretch over dim7",
+          //       "id": 425150171369425
+          //     },
+          //     {
+          //       "id": 758607329478910,
+          //       "priority": "High",
+          //       "description": "App or approachable music",
+          //       "title": "Sight Reading",
+          //       "pointValue": "6"
+          //     },
+          //     {
+          //       "description": "Ring finger alternating lifts",
+          //       "id": 815679367393136,
+          //       "priority": "High",
+          //       "title": "Technique",
+          //       "pointValue": "7"
+          //     },
+          //     {
+          //       "title": "Technique",
+          //       "id": 837943170368712,
+          //       "pointValue": "10",
+          //       "description": "Full Circle M/m triad in position 5 finger pattern",
+          //       "priority": "High"
+          //     }
+          //   ],
+          //   "wednesday": [],
+          //   "thursday": [],
+          //   "startDate": "Sun Aug 20 2023",
+          //   "saturday": []
+          // },
+          // {
+          //   "weekNumber": 32,
+          //   "monday": [
+          //     {
+          //       "title": "Arpeggio comp with free melody",
+          //       "id": 976073037560130,
+          //       "description": "Ostinato arpeggio, freely move melodic idea",
+          //       "priority": "High",
+          //       "pointValue": "6"
+          //     },
+          //     {
+          //       "priority": "High",
+          //       "title": "No Sight Playing",
+          //       "pointValue": "6",
+          //       "id": 521632061205478,
+          //       "description": "Find your way by feel alone, speak and sing progressions/melody"
+          //     },
+          //     {
+          //       "id": 695242715697109,
+          //       "description": "Typical progressions, work without looking",
+          //       "title": "Jazz Comping",
+          //       "pointValue": "4",
+          //       "priority": "Med"
+          //     },
+          //     {
+          //       "description": "Warm up finger independence",
+          //       "id": 515134371356797,
+          //       "priority": "High",
+          //       "pointValue": "5",
+          //       "title": "Technique"
+          //     }
+          //   ],
+          //   "friday": [
+          //     {
+          //       "pointValue": "6",
+          //       "title": "Sight Reading",
+          //       "id": 758607329478910,
+          //       "priority": "High",
+          //       "description": "App or approachable music"
+          //     },
+          //     {
+          //       "title": "Sight Reading",
+          //       "id": 758607329478910,
+          //       "pointValue": "6",
+          //       "priority": "High",
+          //       "description": "App or approachable music"
+          //     }
+          //   ],
+          //   "saturday": [
+          //     {
+          //       "pointValue": "4",
+          //       "description": "Bach WTC Prelude 1",
+          //       "title": "Repertoire",
+          //       "id": 289350509717842,
+          //       "priority": "High"
+          //     },
+          //     {
+          //       "title": "Sight Reading",
+          //       "pointValue": "6",
+          //       "priority": "High",
+          //       "description": "App or approachable music",
+          //       "id": 758607329478910
+          //     },
+          //     {
+          //       "pointValue": "6",
+          //       "id": 758607329478910,
+          //       "description": "App or approachable music",
+          //       "title": "Sight Reading",
+          //       "priority": "High"
+          //     },
+          //     {
+          //       "priority": "High",
+          //       "title": "Sight Reading",
+          //       "pointValue": "6",
+          //       "id": 758607329478910,
+          //       "description": "App or approachable music"
+          //     },
+          //     {
+          //       "description": "App or approachable music",
+          //       "pointValue": "6",
+          //       "priority": "High",
+          //       "id": 758607329478910,
+          //       "title": "Sight Reading"
+          //     },
+          //     {
+          //       "title": "No Sight Playing",
+          //       "priority": "High",
+          //       "pointValue": "6",
+          //       "description": "Find your way by feel alone, speak and sing progressions/melody",
+          //       "id": 521632061205478
+          //     },
+          //     {
+          //       "priority": "High",
+          //       "pointValue": "5",
+          //       "title": "Technique",
+          //       "id": 515134371356797,
+          //       "description": "Warm up finger independence"
+          //     },
+          //     {
+          //       "description": "Warm up finger independence",
+          //       "priority": "High",
+          //       "title": "Technique",
+          //       "pointValue": "5",
+          //       "id": 515134371356797
+          //     },
+          //     {
+          //       "priority": "Med",
+          //       "description": "Full-hand stretch over dim7",
+          //       "title": "Technique",
+          //       "pointValue": "4",
+          //       "id": 425150171369425
+          //     },
+          //     {
+          //       "pointValue": "10",
+          //       "description": "Full Circle M/m triad in position 5 finger pattern",
+          //       "id": 837943170368712,
+          //       "priority": "High",
+          //       "title": "Technique"
+          //     },
+          //     {
+          //       "priority": "Medium",
+          //       "title": "Technique",
+          //       "pointValue": "5",
+          //       "description": "5-finger adjacent pattern with step-wise shift",
+          //       "id": 282319413572487
+          //     },
+          //     {
+          //       "description": "Ring finger alternating lifts",
+          //       "priority": "High",
+          //       "id": 815679367393136,
+          //       "title": "Technique",
+          //       "pointValue": "7"
+          //     }
+          //   ],
+          //   "thursday": [
+          //     {
+          //       "description": "Bach WTC Prelude 1",
+          //       "priority": "High",
+          //       "pointValue": "4",
+          //       "title": "Repertoire",
+          //       "id": 289350509717842
+          //     },
+          //     {
+          //       "id": 758607329478910,
+          //       "pointValue": "6",
+          //       "priority": "High",
+          //       "title": "Sight Reading",
+          //       "description": "App or approachable music"
+          //     },
+          //     {
+          //       "priority": "High",
+          //       "pointValue": "5",
+          //       "title": "Technique",
+          //       "description": "Warm up finger independence",
+          //       "id": 515134371356797
+          //     },
+          //     {
+          //       "description": "Full-hand stretch over dim7",
+          //       "priority": "Med",
+          //       "id": 425150171369425,
+          //       "pointValue": "4",
+          //       "title": "Technique"
+          //     },
+          //     {
+          //       "priority": "Med",
+          //       "id": 809081273797419,
+          //       "title": "Repertoire",
+          //       "pointValue": "4",
+          //       "description": "Blue Skies"
+          //     },
+          //     {
+          //       "id": 837943170368712,
+          //       "pointValue": "10",
+          //       "priority": "High",
+          //       "description": "Full Circle M/m triad in position 5 finger pattern",
+          //       "title": "Technique"
+          //     }
+          //   ],
+          //   "tuesday": [
+          //     {
+          //       "id": 425150171369425,
+          //       "description": "Full-hand stretch over dim7",
+          //       "pointValue": "4",
+          //       "title": "Technique",
+          //       "priority": "Med"
+          //     },
+          //     {
+          //       "pointValue": "6",
+          //       "title": "Sight Reading",
+          //       "description": "App or approachable music",
+          //       "priority": "High",
+          //       "id": 758607329478910
+          //     },
+          //     {
+          //       "id": 289350509717842,
+          //       "pointValue": "4",
+          //       "priority": "High",
+          //       "description": "Bach WTC Prelude 1",
+          //       "title": "Repertoire"
+          //     },
+          //     {
+          //       "title": "Technique",
+          //       "id": 515134371356797,
+          //       "priority": "High",
+          //       "pointValue": "5",
+          //       "description": "Warm up finger independence"
+          //     },
+          //     {
+          //       "description": "Full Circle M/m triad in position 5 finger pattern",
+          //       "pointValue": "10",
+          //       "title": "Technique",
+          //       "id": 837943170368712,
+          //       "priority": "High"
+          //     },
+          //     {
+          //       "id": 976073037560130,
+          //       "description": "Ostinato arpeggio, freely move melodic idea",
+          //       "pointValue": "6",
+          //       "priority": "High",
+          //       "title": "Arpeggio comp with free melody"
+          //     }
+          //   ],
+          //   "sunday": [
+          //     {
+          //       "title": "Repertoire",
+          //       "id": 289350509717842,
+          //       "description": "Bach WTC Prelude 1",
+          //       "priority": "High",
+          //       "pointValue": "4"
+          //     },
+          //     {
+          //       "id": 515134371356797,
+          //       "description": "Warm up finger independence",
+          //       "pointValue": "5",
+          //       "title": "Technique",
+          //       "priority": "High"
+          //     },
+          //     {
+          //       "description": "Full-hand stretch over dim7",
+          //       "id": 425150171369425,
+          //       "priority": "Med",
+          //       "pointValue": "4",
+          //       "title": "Technique"
+          //     },
+          //     {
+          //       "title": "Repertoire",
+          //       "priority": "High",
+          //       "id": 289350509717842,
+          //       "pointValue": "4",
+          //       "description": "Bach WTC Prelude 1"
+          //     },
+          //     {
+          //       "id": 593943241540254,
+          //       "priority": "High",
+          //       "title": "Scales",
+          //       "pointValue": "20",
+          //       "description": "Full circle"
+          //     },
+          //     {
+          //       "title": "Sight Reading",
+          //       "priority": "High",
+          //       "id": 758607329478910,
+          //       "pointValue": "6",
+          //       "description": "App or approachable music"
+          //     },
+          //     {
+          //       "title": "Sight Reading",
+          //       "id": 758607329478910,
+          //       "pointValue": "6",
+          //       "description": "App or approachable music",
+          //       "priority": "High"
+          //     },
+          //     {
+          //       "priority": "High",
+          //       "description": "Read from two-handed stave",
+          //       "id": 504971294852590,
+          //       "pointValue": "5",
+          //       "title": "Rhythmic Independence"
+          //     },
+          //     {
+          //       "description": "Full Circle M/m triad in position 5 finger pattern",
+          //       "priority": "High",
+          //       "id": 837943170368712,
+          //       "pointValue": "10",
+          //       "title": "Technique"
+          //     }
+          //   ],
+          //   "totalWeeklyPoints": 0,
+          //   "startDate": "Sun Aug 13 2023",
+          //   "wednesday": [
+          //     {
+          //       "title": "Technique",
+          //       "priority": "High",
+          //       "id": 515134371356797,
+          //       "description": "Warm up finger independence",
+          //       "pointValue": "5"
+          //     },
+          //     {
+          //       "priority": "Med",
+          //       "title": "Technique",
+          //       "id": 425150171369425,
+          //       "pointValue": "4",
+          //       "description": "Full-hand stretch over dim7"
+          //     },
+          //     {
+          //       "id": 837943170368712,
+          //       "priority": "High",
+          //       "description": "Full Circle M/m triad in position 5 finger pattern",
+          //       "pointValue": "10",
+          //       "title": "Technique"
+          //     }
+          //   ]
+          // },
           {
             "startDate": "Sun Aug 6 2023",
             "wednesday": [

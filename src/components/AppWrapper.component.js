@@ -10,6 +10,8 @@ import { DaysTaskOutput } from "./taskOutput.component"
 import { NewTask } from "./newTask.component"
 import { TaskList } from "./taskList.component"
 import { gatherUserDataFromDB } from "../firebase"
+import weekChecker from "../utilities/weekChecker"
+import { userData } from "../assets/initialDataConfig"
 
 export const AppWrapper = () => {
 
@@ -22,7 +24,8 @@ export const AppWrapper = () => {
         const unSubAuth = onAuthStateChanged(userAuth, async (userAuth) => {
             if (userAuth) {
                 await userInitializationHandler(userAuth, dispatch, unSubAuth)
-                await gatherUserDataFromDB(userAuth, dispatch)
+                // await gatherUserDataFromDB(userAuth, dispatch)
+                weekChecker(userData)
                 
             } else if (userAuth === null) {
                 dispatch({

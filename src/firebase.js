@@ -120,7 +120,7 @@ export const gatherUserDataFromDB = async (userAuth, dispatch) => {
   userBoardSnapshot.forEach((doc) => {
     userDataArray.push(doc.data())
   })
-  const updatedUserData = weekChecker(dispatch, userDataArray)
+  const updatedUserData = weekChecker(userDataArray)
   dispatch({ type: 'SET_USERLISTS', payload: { userDataArray: updatedUserData } })
 }
 

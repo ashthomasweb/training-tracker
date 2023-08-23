@@ -6,7 +6,7 @@ export const MainContext = createContext()
 
 export const initialMainState = {
   userObj: null,
-  userData: null,
+  userData: userData,
   currentTrainerID: null,
   daysTaskOutput: [],
   historyReady: false
