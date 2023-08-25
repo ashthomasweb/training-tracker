@@ -9,7 +9,7 @@ export const History = () => {
     const [populatedWeekIndexArray, setPopulatedWeekIndexArray] = useState([])
 
     useEffect(() => {
-        console.log('Trace: weekPopulator()')
+        // console.log('Trace: weekPopulator()')
 
         if (currentTrainerID) {
             let populatedWeeks = currentTrainerID
@@ -31,7 +31,7 @@ export const History = () => {
 
 
     function returnWeeks() {
-        console.log('Trace: returnWeeks()')
+        // console.log('Trace: returnWeeks()')
         return (
             populatedWeekIndexArray.map((entry, index) => (
                 <Week key={index} weekIndex={entry} />

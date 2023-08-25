@@ -18,6 +18,7 @@
 
 import { initializeApp } from 'firebase/app'
 import { getAuth } from 'firebase/auth'
+import { userData } from './assets/initialDataConfig'
 
 import {
   getFirestore,
@@ -94,7 +95,6 @@ export const userInitializationHandler = async (
         userObjFromDB = {
           ...userObjFromDB,
         }
-        console.log('exist')
 
         dispatch({
           type: 'SET_CURRENT_USER_TO_STATE',
@@ -120,8 +120,10 @@ export const gatherUserDataFromDB = async (userAuth, dispatch) => {
   userBoardSnapshot.forEach((doc) => {
     userDataArray.push(doc.data())
   })
-  const updatedUserData = weekChecker(userDataArray)
-  dispatch({ type: 'SET_USERLISTS', payload: { userDataArray: updatedUserData } })
+  // let updatedUserData = weekChecker(userDataArray[0])
+
+  let testUserData = weekChecker(userData)
+  dispatch({ type: 'SET_USERLISTS', payload: { userData: testUserData } })
 }
 
 export const saveUserDataToDB = async (userUID, userDataObj) => {

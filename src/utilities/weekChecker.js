@@ -1,12 +1,10 @@
+import { uidGenerator50Max } from "./generators"
+
 export default function weekChecker(userData) {
     console.log('TRACE: weekChecker()')
 
-    console.log(userData)
-
-
     function addWeek(trainer, trainerIndexToUpdate) {
         console.log(`Trace: addWeeks`)
-        console.log(trainer)
         let daysSinceLastSatEntry = 0
         let weeksSinceLastSat = 0
         let newDate
@@ -16,12 +14,11 @@ export default function weekChecker(userData) {
 
         function isDateMoreThanAWeekOld(dateToCheck) {
             console.log(`Trace: isDateMoreThanAWeekOld`)
-
+            
             const oneWeekAgo = new Date();
             oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
             daysSinceLastSatEntry = (oneWeekAgo - dateToCheck) / 1000 / 60 / 60 / 24 + 7
             weeksSinceLastSat = Math.abs(((daysSinceLastSatEntry % 7) - daysSinceLastSatEntry) / 7)
-            console.log(weeksSinceLastSat)
             return dateToCheck < oneWeekAgo;
         }
 
@@ -30,7 +27,6 @@ export default function weekChecker(userData) {
 
             function addWeekToDate(date) {
                 console.log(`addWeekToDate`)
-
                 date.setDate(date.getDate() + 7);
                 return date;
             }
@@ -48,17 +44,15 @@ export default function weekChecker(userData) {
             }
             newWeekEntry.startDate = newDate.toDateString()
             newWeekEntry.weekNumber = newWeekNum
-            console.log(newWeekEntry)
+            newWeekEntry.id = uidGenerator50Max(15)
             return newWeekEntry
         }
 
 
         if (isDateMoreThanAWeekOld(mostRecentWeek)) {
-
             for (let i = 0; i < weeksSinceLastSat; i++) {
-                newWeek()
+                userData.trainers[trainerIndexToUpdate].history.unshift(newWeek())
             }
-
         }
     }
 
@@ -70,6 +64,4 @@ export default function weekChecker(userData) {
     trainerWeekLoop()
 
     return userData
-
 }
-

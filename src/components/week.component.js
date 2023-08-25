@@ -54,6 +54,7 @@ export const Week = (props) => {
     function Day(index) {
         return (
             <div
+                key={index} 
                 onClick={getDailyInfo}
                 data-day={dayArray[index]}
                 style={{

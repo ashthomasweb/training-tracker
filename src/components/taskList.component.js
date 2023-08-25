@@ -52,8 +52,8 @@ export const TaskList = () => {
         <div className="task-list">
             {
                 currentTrainerID !== null ?
-                    userData.trainers.filter(entry => entry.id === currentTrainerID)[0].tasks.map((task) => (
-                        <div className="task-display-entry" onDoubleClick={() => addToHistory(task.id)} >
+                    userData.trainers.filter(entry => entry.id === currentTrainerID)[0].tasks.map((task, index) => (
+                        <div key={index} className="task-display-entry" onDoubleClick={() => addToHistory(task.id)} >
                             {taskDisplay(task)}
                         </div>
                     ))

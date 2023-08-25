@@ -20,12 +20,12 @@ export const AppWrapper = () => {
     const userAuth = getAuth()
 
     useEffect(() => {
-        console.log(`Trace: useEffect/AuthHandler`)
+        // console.log(`Trace: useEffect/AuthHandler`)
         const unSubAuth = onAuthStateChanged(userAuth, async (userAuth) => {
             if (userAuth) {
                 await userInitializationHandler(userAuth, dispatch, unSubAuth)
-                // await gatherUserDataFromDB(userAuth, dispatch)
-                weekChecker(userData)
+                await gatherUserDataFromDB(userAuth, dispatch)
+                // weekChecker(userData)
                 
             } else if (userAuth === null) {
                 dispatch({
@@ -38,7 +38,7 @@ export const AppWrapper = () => {
 
     return (
         <>
-            {userObj === null ? (
+            {userObj === null && userData !== null ? (
                 <SignInUpModal />
             ) : (
                 <div className="app-container">
