@@ -6,69 +6,69 @@ export const userData = {
             "title": "Music Practice",
             "id": 1234,
             "history": [
-                {
-                    "weekNumber": null,
-                    "thursday": [],
-                    "saturday": [],
-                    "monday": [
-                        {
-                            "description": "Bach WTC Prelude 1",
-                            "priority": "High",
-                            "pointValue": "4",
-                            "title": "Repertoire",
-                            "id": 289350509717842
-                        },
-                        {
-                            "title": "Repertoire",
-                            "id": 307501842071656,
-                            "pointValue": "7",
-                            "description": "Beethoven Sonatina in G Maj",
-                            "priority": "High"
-                        },
-                        {
-                            "priority": "High",
-                            "id": 307501842071656,
-                            "pointValue": "7",
-                            "title": "Repertoire",
-                            "description": "Beethoven Sonatina in G Maj"
-                        },
-                        {
-                            "id": 307501842071656,
-                            "description": "Beethoven Sonatina in G Maj",
-                            "pointValue": "7",
-                            "title": "Repertoire",
-                            "priority": "High"
-                        }
-                    ],
-                    "sunday": [
-                        {
-                            "id": 758607329478910,
-                            "title": "Sight Reading",
-                            "pointValue": "6",
-                            "priority": "High",
-                            "description": "App or approachable music"
-                        },
-                        {
-                            "title": "Sight Reading",
-                            "pointValue": "6",
-                            "priority": "High",
-                            "id": 758607329478910,
-                            "description": "App or approachable music"
-                        },
-                        {
-                            "id": 307501842071656,
-                            "description": "Beethoven Sonatina in G Maj",
-                            "priority": "High",
-                            "pointValue": "7",
-                            "title": "Repertoire"
-                        }
-                    ],
-                    "friday": [],
-                    "totalWeeklyPoints": 0,
-                    "tuesday": [],
-                    "wednesday": [],
-                    "startDate": null
-                },
+                // {
+                //     "weekNumber": 35,
+                //     "thursday": [],
+                //     "saturday": [],
+                //     "monday": [
+                //         {
+                //             "description": "Bach WTC Prelude 1",
+                //             "priority": "High",
+                //             "pointValue": "4",
+                //             "title": "Repertoire",
+                //             "id": 289350509717842
+                //         },
+                //         {
+                //             "title": "Repertoire",
+                //             "id": 307501842071656,
+                //             "pointValue": "7",
+                //             "description": "Beethoven Sonatina in G Maj",
+                //             "priority": "High"
+                //         },
+                //         {
+                //             "priority": "High",
+                //             "id": 307501842071656,
+                //             "pointValue": "7",
+                //             "title": "Repertoire",
+                //             "description": "Beethoven Sonatina in G Maj"
+                //         },
+                //         {
+                //             "id": 307501842071656,
+                //             "description": "Beethoven Sonatina in G Maj",
+                //             "pointValue": "7",
+                //             "title": "Repertoire",
+                //             "priority": "High"
+                //         }
+                //     ],
+                //     "sunday": [
+                //         {
+                //             "id": 758607329478910,
+                //             "title": "Sight Reading",
+                //             "pointValue": "6",
+                //             "priority": "High",
+                //             "description": "App or approachable music"
+                //         },
+                //         {
+                //             "title": "Sight Reading",
+                //             "pointValue": "6",
+                //             "priority": "High",
+                //             "id": 758607329478910,
+                //             "description": "App or approachable music"
+                //         },
+                //         {
+                //             "id": 307501842071656,
+                //             "description": "Beethoven Sonatina in G Maj",
+                //             "priority": "High",
+                //             "pointValue": "7",
+                //             "title": "Repertoire"
+                //         }
+                //     ],
+                //     "friday": [],
+                //     "totalWeeklyPoints": 0,
+                //     "tuesday": [],
+                //     "wednesday": [],
+                //     "startDate": null
+                // },
                 {
                     "monday": [
                         {

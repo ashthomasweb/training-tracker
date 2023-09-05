@@ -33,7 +33,33 @@ export const TaskList = () => {
     const addToHistory = (clickedID) => {
         let selectedTask = userData.trainers.filter(entry => entry.id === currentTrainerID)[0].tasks.filter(task => task.id === clickedID)[0]
         console.log(selectedTask)
-        let mostRecentWeek = userData.trainers.filter(entry => entry.id === currentTrainerID)[0].history[0]
+        const emptyWeek = userData.trainers.filter(entry => entry.id === currentTrainerID)[0].history[0]
+
+        function deepClone(obj) {
+            if (obj === null || typeof obj !== 'object') {
+                return obj;
+            }
+
+            if (Array.isArray(obj)) {
+                const newArray = [];
+                for (let i = 0; i < obj.length; i++) {
+                    newArray[i] = deepClone(obj[i]);
+                }
+                return newArray;
+            }
+
+            const newObj = {};
+            for (const key in obj) {
+                if (obj.hasOwnProperty(key)) {
+                    newObj[key] = deepClone(obj[key]);
+                }
+            }
+
+            return newObj;
+        }
+
+        let mostRecentWeek = deepClone(emptyWeek);
+
         const now = new Date();
         const currentDayOfWeekIndex = now.getDay();
         const daysOfWeek = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
@@ -45,7 +71,7 @@ export const TaskList = () => {
             mostRecentWeek,
             userUID: userObj.uid
         }
-        dispatch({type: 'ADD_TASK_TO_HISTORY', payload: payload})
+        dispatch({ type: 'ADD_TASK_TO_HISTORY', payload: payload })
     }
 
     return (

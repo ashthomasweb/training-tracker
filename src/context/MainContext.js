@@ -6,7 +6,7 @@ export const MainContext = createContext()
 
 export const initialMainState = {
   userObj: null,
-  userData: null,
+  userData: userData,
   currentTrainerID: null,
   daysTaskOutput: [],
   historyReady: false
@@ -73,9 +73,11 @@ export const MainReducer = (state, action) => {
     }
 
     case 'ADD_TASK_TO_HISTORY': {
-      // console.log(`Trace: ADD_TASK_TO_HISTORY()`)
+    //   console.log(`Trace: ADD_TASK_TO_HISTORY()`)
       const history = state.userData.trainers.filter(trainer => trainer.id === action.payload.currentTrainerID)[0].history
+      debugger
       history[0] = action.payload.mostRecentWeek
+      debugger
       const updatedUserData = {
         ...state.userData,
         trainers: state.userData.trainers.map(trainer => {
@@ -88,6 +90,7 @@ export const MainReducer = (state, action) => {
           return trainer;
         }),
       };
+      debugger
       saveUserDataToDB(action.payload.userUID, updatedUserData)
       return {
         ...state,
@@ -96,7 +99,10 @@ export const MainReducer = (state, action) => {
     }
     
     case 'SET_USERLISTS': {
-      // console.log(`Trace: SET_USERLISTS()`)
+      console.log(`Trace: SET_USERLISTS()`)
+
+
+      debugger
       return {
         ...state,
         userData: action.payload.userData

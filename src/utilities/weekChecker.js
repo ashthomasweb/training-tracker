@@ -51,12 +51,14 @@ export default function weekChecker(userData) {
 
         if (isDateMoreThanAWeekOld(mostRecentWeek)) {
             for (let i = 0; i < weeksSinceLastSat; i++) {
+                debugger
                 userData.trainers[trainerIndexToUpdate].history.unshift(newWeek())
             }
         }
     }
 
     function trainerWeekLoop() {
+        console.log(`Trace: trainerWeekLoop`)
         userData.trainers.forEach((trainer, index) => {
             index === 0 && addWeek(trainer, 0)
         })
