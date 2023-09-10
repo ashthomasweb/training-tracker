@@ -108,3 +108,20 @@
         margin: 10px 0;
     }
 }
+
+.update-history-container {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    width: auto;
+
+    .add-to-selected {
+        margin-left: 20px;
+        width: 200px;
+        height: 40px;
+        border: 5px solid red;
+        font-weight: 900;
+        cursor: pointer;
+    }
+}

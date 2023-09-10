@@ -4,7 +4,7 @@ import { MainContext } from "../context/MainContext"
 
 export const History = () => {
 
-    const { state: { userData, currentTrainerID } } = useContext(MainContext)
+    const { state: { userData, currentTrainerID, addToSelected }, dispatch } = useContext(MainContext)
 
     const [populatedWeekIndexArray, setPopulatedWeekIndexArray] = useState([])
 
@@ -29,6 +29,16 @@ export const History = () => {
 
     }, [currentTrainerID, userData.trainers])
 
+    const clearAddToSelected = () => {
+        const newAddToSelected = {
+            weekIndex: null,
+            day: null
+        }
+        dispatch({
+            type: 'SET_ADD_TO_SELECTED_CONDITIONS', payload: { addToSelected: newAddToSelected }
+        })
+    }
+
 
     function returnWeeks() {
         // console.log('Trace: returnWeeks()')
@@ -44,6 +54,20 @@ export const History = () => {
             {currentTrainerID ?
                 returnWeeks()
                 : null
+            }
+            {
+                addToSelected.weekIndex !== null
+                    ?
+                    <div className="update-history-container">
+                        <span>Update History Active</span>
+                        <button
+                            className="add-to-selected"
+                            onClick={clearAddToSelected}
+                        >
+                            Clear Update Mode
+                        </button>
+                    </div>
+                    : null
             }
         </div>
     )

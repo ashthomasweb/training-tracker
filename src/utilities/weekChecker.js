@@ -51,7 +51,7 @@ export default function weekChecker(userData) {
 
         if (isDateMoreThanAWeekOld(mostRecentWeek)) {
             for (let i = 0; i < weeksSinceLastSat; i++) {
-                debugger
+                // debugger
                 userData.trainers[trainerIndexToUpdate].history.unshift(newWeek())
             }
         }

@@ -3,9 +3,9 @@ import { MainContext } from "../context/MainContext"
 
 export const Week = (props) => {
 
-    const { state: { userData }, dispatch } = useContext(MainContext)
+    const { state: { userData, addToSelected }, dispatch } = useContext(MainContext)
 
-    let currentTrainerHistory = userData.trainers[0].history[props.weekIndex]
+    let thisWeeksHistory = userData.trainers[0].history[props.weekIndex]
 
     let lightGreen = '#8accff'
     let mediumGreen = '#2fb5ff'
@@ -45,8 +45,19 @@ export const Week = (props) => {
 
     }
 
+    const addToSelectedDay = (e) => {
+        e.preventDefault()
+        console.log(thisWeeksHistory[e.target.dataset.day])
+        const addToSelected = {
+            weekIndex: props.weekIndex,
+            day: e.target.dataset.day
+        }
+        console.log(addToSelected)
+        dispatch({ type: 'SET_ADD_TO_SELECTED_CONDITIONS', payload: { addToSelected }})
+    }
+
     const getDailyInfo = (e) => {
-        dispatch({ type: 'SET_DAYS_TASK_OUTPUT', payload: currentTrainerHistory[e.target.dataset.day] })
+        dispatch({ type: 'SET_DAYS_TASK_OUTPUT', payload: thisWeeksHistory[e.target.dataset.day] })
     }
 
     const dayArray = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
@@ -56,24 +67,26 @@ export const Week = (props) => {
             <div
                 key={index} 
                 onClick={getDailyInfo}
+                onContextMenu={addToSelectedDay}
                 data-day={dayArray[index]}
                 style={{
-                    backgroundColor: `${currentTrainerHistory[dayArray[index]].length > 0
-                        ? colorHandler(currentTrainerHistory[dayArray[index]])
+                    backgroundColor: `${thisWeeksHistory[dayArray[index]].length > 0
+                        ? colorHandler(thisWeeksHistory[dayArray[index]])
                         : 'white'
                         }`,
+                    boxShadow: `${props.weekIndex === addToSelected.weekIndex && dayArray[index] === addToSelected.day ? '0 0 7px red' : 'none'}`
                 }}
             />
         )
     }
 
     function showMonth() {
-        let date = new Date(currentTrainerHistory.startDate)
+        let date = new Date(thisWeeksHistory.startDate)
         let day = date.getDate()
         if (day <= 7) {
             return (
                 <div style={{ position: 'absolute', top: -26 }} className="month-indication">
-                    {currentTrainerHistory.startDate.substr(4, 3)}
+                    {thisWeeksHistory.startDate.substr(4, 3)}
                 </div>
             )
         }
@@ -81,7 +94,7 @@ export const Week = (props) => {
 
     return (
 
-            <div className="week-container" data-startdate={currentTrainerHistory.startDate}>
+            <div className="week-container" data-startdate={thisWeeksHistory.startDate}>
             {showMonth()}
                 {
                     props ?

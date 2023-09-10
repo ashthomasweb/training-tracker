@@ -1,15 +1,19 @@
 import { createContext } from "react";
-import { userData } from "../assets/initialDataConfig";
+// import { userData } from "../assets/initialDataConfig";
 import { saveUserDataToDB } from "../firebase";
 
 export const MainContext = createContext()
 
 export const initialMainState = {
   userObj: null,
-  userData: userData,
+  userData: null,
   currentTrainerID: null,
   daysTaskOutput: [],
-  historyReady: false
+  historyReady: false,
+  addToSelected: {
+    weekIndex: null,
+    day: null
+  }
 }
 
 export const MainReducer = (state, action) => {
@@ -75,9 +79,9 @@ export const MainReducer = (state, action) => {
     case 'ADD_TASK_TO_HISTORY': {
     //   console.log(`Trace: ADD_TASK_TO_HISTORY()`)
       const history = state.userData.trainers.filter(trainer => trainer.id === action.payload.currentTrainerID)[0].history
-      debugger
+    //   debugger
       history[0] = action.payload.mostRecentWeek
-      debugger
+    //   debugger
       const updatedUserData = {
         ...state.userData,
         trainers: state.userData.trainers.map(trainer => {
@@ -90,19 +94,42 @@ export const MainReducer = (state, action) => {
           return trainer;
         }),
       };
-      debugger
+    //   debugger
       saveUserDataToDB(action.payload.userUID, updatedUserData)
       return {
         ...state,
         userData: updatedUserData
       }
     }
+
+    case 'ADD_TASK_TO_BACK_HISTORY': {
+          console.log(`Trace: ADD_TASK_TO_BACK_HISTORY()`)
+          debugger
+          const history = action.payload.history
+          const updatedUserData = {
+            ...state.userData,
+            trainers: state.userData.trainers.map(trainer => {
+              if (trainer.id === action.payload.currentTrainerID) {
+                return {
+                  ...trainer,
+                  history
+                };
+              }
+              return trainer;
+            }),
+          };
+          debugger
+          saveUserDataToDB(action.payload.userUID, updatedUserData)
+          return {
+            ...state,
+            userData: updatedUserData
+          }
+        }
     
     case 'SET_USERLISTS': {
       console.log(`Trace: SET_USERLISTS()`)
 
-
-      debugger
+    //   debugger
       return {
         ...state,
         userData: action.payload.userData
@@ -116,6 +143,14 @@ export const MainReducer = (state, action) => {
         historyReady: true
       }
     }
+
+    case 'SET_ADD_TO_SELECTED_CONDITIONS': {
+        console.log(`Trace: SET_ADD_TO_SELECTED_CONDITIONS()`)
+        return {
+          ...state,
+          addToSelected: action.payload.addToSelected
+        }
+      }
 
     default:
       break;
