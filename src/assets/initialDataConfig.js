@@ -3104,6 +3104,170 @@ export const userData = {
                     "priority": "High",
                     "id": 515134371356797,
                     "pointValue": "5"
+                },
+                {
+                    "pointValue": "4",
+                    "id": 425150171369425,
+                    "description": "Full-hand stretch over dim7",
+                    "priority": "Med",
+                    "title": "Technique"
+                },
+                {
+                    "description": "Adjacent trills",
+                    "id": 630896261939036,
+                    "priority": "Med",
+                    "title": "Technique",
+                    "pointValue": "4"
+                },
+                {
+                    "pointValue": "5",
+                    "title": "Layout",
+                    "id": 518416483908063,
+                    "priority": "Med",
+                    "description": "Unfamilar key work - move through typical patterns"
+                },
+                {
+                    "id": 848681048418347,
+                    "description": "Ostinato with faster moving melody",
+                    "priority": "High",
+                    "title": "Rhythmic Independence",
+                    "pointValue": "6"
+                },
+                {
+                    "title": "Alberti Bass",
+                    "pointValue": "4",
+                    "id": 248718170723754,
+                    "description": "Move through typical progressions",
+                    "priority": "Med"
+                },
+                {
+                    "title": "Pop Comping",
+                    "id": 497028742395156,
+                    "pointValue": "5",
+                    "description": "Move through typical progressions",
+                    "priority": "Med"
+                },
+                {
+                    "title": "Modal Scale patterns",
+                    "pointValue": "4",
+                    "priority": "Med",
+                    "id": 134752751636126,
+                    "description": "Go up and down 1 key center, all hand combos"
+                },
+                {
+                    "priority": "Med",
+                    "id": 956540103274070,
+                    "title": "High/Low octave playing",
+                    "pointValue": "4",
+                    "description": "Pick any exercise and pair in extreme ranges"
+                },
+                {
+                    "description": "Scales, Arpeggios, or Comping",
+                    "id": 107621528602843,
+                    "title": "Dynamic Control",
+                    "priority": "Med",
+                    "pointValue": "4"
+                },
+                {
+                    "priority": "High",
+                    "description": "Read from two-handed stave",
+                    "title": "Rhythmic Independence",
+                    "pointValue": "5",
+                    "id": 504971294852590
+                },
+                {
+                    "priority": "Med",
+                    "title": "Play heard melody/progression by ear",
+                    "id": 463691710853053,
+                    "description": "Pick a tune and play it",
+                    "pointValue": "4"
+                },
+                {
+                    "description": "Comp in right hand",
+                    "priority": "Med",
+                    "title": "Walk a bass line",
+                    "id": 735678486860959,
+                    "pointValue": "4"
+                },
+                {
+                    "pointValue": "4",
+                    "title": "Gestural Playing vs Rhythmic Drive",
+                    "id": 534975654964275,
+                    "priority": "Med",
+                    "description": "Switch between the two without breaking"
+                },
+                {
+                    "pointValue": "5",
+                    "priority": "High",
+                    "title": "Accurate leaps",
+                    "description": "No-look activity, both hands",
+                    "id": 389783703731953
+                },
+                {
+                    "priority": "High",
+                    "pointValue": "5",
+                    "title": "Repertoire",
+                    "id": 809081273797419,
+                    "description": "Unchained Melody"
+                },
+                {
+                    "title": "Technique",
+                    "priority": "High",
+                    "description": "Variable-height key rolls",
+                    "id": 809081279397419,
+                    "pointValue": "6"
+                },
+                {
+                    "priority": "High",
+                    "title": "Scales",
+                    "pointValue": "20",
+                    "id": 593943241540254,
+                    "description": "Full circle"
+                },
+                {
+                    "id": 837943170368712,
+                    "priority": "High",
+                    "title": "Technique",
+                    "pointValue": "10",
+                    "description": "Full Circle M/m triad in position 5 finger pattern"
+                },
+                {
+                    "pointValue": "5",
+                    "description": "5-finger adjacent pattern with step-wise shift",
+                    "id": 282319413572487,
+                    "priority": "Medium",
+                    "title": "Technique"
+                },
+                {
+                    "id": 815679367393136,
+                    "priority": "High",
+                    "title": "Technique",
+                    "description": "Ring finger alternating lifts",
+                    "pointValue": "7"
+                },
+                {
+                    "description": "Compositional Harmonic Motion",
+                    "pointValue": "10",
+                    "title": "Improvising",
+                    "id": 830981752354781,
+                    "priority": "Medium"
+                },
+                {
+                    "priority": "High",
+                    "description": "Classical accompaniment w/ subdivded scales",
+                    "title": "Improvisation",
+                    "id": 964269353902606,
+                    "pointValue": "8"
+                },
+                {
+                    "id": 307501842071656,
+                    "description": "Beethoven Sonatina in G Maj",
+                    "pointValue": "7",
+                    "title": "Repertoire",
+                    "priority": "High"
+                }
+            ]
+        },
                   }
                 ]
               },
@@ -3605,6 +3769,7 @@ export const userData = {
               }
             ]
           },
+
         {
             id: 4321,
             title: 'Exercise Routine',

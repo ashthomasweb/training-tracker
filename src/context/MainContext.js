@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import { userData } from "../assets/initialDataConfig";
+// import { userData } from "../assets/initialDataConfig";
 import { saveUserDataToDB } from "../firebase";
 
 export const MainContext = createContext()
@@ -9,15 +9,18 @@ export const initialMainState = {
   userData: null,
   currentTrainerID: null,
   daysTaskOutput: [],
-  historyReady: false
+  historyReady: false,
+  addToSelected: {
+    weekIndex: null,
+    day: null
+  }
 }
 
 export const MainReducer = (state, action) => {
   switch (action.type) {
 
     case 'SET_CURRENT_USER_TO_STATE': {
-      console.log(`Trace: SET_CURRENT_USER_TO_STATE()`)
-      console.log(action.payload)
+      // console.log(`Trace: SET_CURRENT_USER_TO_STATE()`)
       let data = action.payload.userObj
       let userObj = data
       return {
@@ -27,7 +30,7 @@ export const MainReducer = (state, action) => {
     }
 
     case 'SIGN_USER_OUT': {
-      console.log(`Trace: SIGN_USER_OUT()`)
+      // console.log(`Trace: SIGN_USER_OUT()`)
       let userObj = null
       return {
         ...state,
@@ -36,8 +39,7 @@ export const MainReducer = (state, action) => {
     }
 
     case 'SET_CURRENT_TRAINER': {
-      console.log(`Trace: SET_CURRENT_TRAINER()`)
-      console.log(action.payload)
+      // console.log(`Trace: SET_CURRENT_TRAINER()`)
       return {
         ...state,
         currentTrainerID: action.payload
@@ -45,7 +47,7 @@ export const MainReducer = (state, action) => {
     }
 
     case 'SET_DAYS_TASK_OUTPUT': {
-      console.log(`Trace: SET_DAYS_TASK_OUTPUT()`)
+      // console.log(`Trace: SET_DAYS_TASK_OUTPUT()`)
       return {
         ...state,
         daysTaskOutput: [...action.payload]
@@ -53,7 +55,7 @@ export const MainReducer = (state, action) => {
     }
 
     case 'ADD_NEW_TASK': {
-      console.log(`Trace: ADD_NEW_TASK()`)
+      // console.log(`Trace: ADD_NEW_TASK()`)
       const updatedUserData = {
         ...state.userData,
         trainers: state.userData.trainers.map(trainer => {
@@ -67,7 +69,6 @@ export const MainReducer = (state, action) => {
         }),
       };
 
-      
       saveUserDataToDB(action.payload.userUID, updatedUserData)
       return {
         ...state,
@@ -76,9 +77,11 @@ export const MainReducer = (state, action) => {
     }
 
     case 'ADD_TASK_TO_HISTORY': {
-      console.log(`Trace: ADD_TASK_TO_HISTORY()`)
+    //   console.log(`Trace: ADD_TASK_TO_HISTORY()`)
       const history = state.userData.trainers.filter(trainer => trainer.id === action.payload.currentTrainerID)[0].history
+    //   debugger
       history[0] = action.payload.mostRecentWeek
+    //   debugger
       const updatedUserData = {
         ...state.userData,
         trainers: state.userData.trainers.map(trainer => {
@@ -91,39 +94,63 @@ export const MainReducer = (state, action) => {
           return trainer;
         }),
       };
+    //   debugger
       saveUserDataToDB(action.payload.userUID, updatedUserData)
       return {
         ...state,
         userData: updatedUserData
       }
     }
+
+    case 'ADD_TASK_TO_BACK_HISTORY': {
+          console.log(`Trace: ADD_TASK_TO_BACK_HISTORY()`)
+          debugger
+          const history = action.payload.history
+          const updatedUserData = {
+            ...state.userData,
+            trainers: state.userData.trainers.map(trainer => {
+              if (trainer.id === action.payload.currentTrainerID) {
+                return {
+                  ...trainer,
+                  history
+                };
+              }
+              return trainer;
+            }),
+          };
+          debugger
+          saveUserDataToDB(action.payload.userUID, updatedUserData)
+          return {
+            ...state,
+            userData: updatedUserData
+          }
+        }
     
     case 'SET_USERLISTS': {
       console.log(`Trace: SET_USERLISTS()`)
-      console.log(action.payload)
+
+    //   debugger
       return {
         ...state,
-        userData: action.payload.userDataArray[0]
+        userData: action.payload.userData
       }
     }
 
-    // case 'ADD_EMPTY_WEEK': {
-    //   console.log(`Trace: ADD_EMPTY_WEEK()`)
-    //   console.log(action.payload)
-    //   let updatedUserData = userData.trainers.filter(entry => entry.id === action.payload.currentTrainerID)[0].history.unshift(action.payload.successiveEmptyWeek)
-    //   return {
-    //     ...state,
-    //     userData: updatedUserData
-    //   }
-    // }
-
     case 'SET_HISTORY_READY': {
-      console.log(`Trace: SET_HISTORY_READY()`)
+      // console.log(`Trace: SET_HISTORY_READY()`)
       return {
         ...state,
         historyReady: true
       }
     }
+
+    case 'SET_ADD_TO_SELECTED_CONDITIONS': {
+        console.log(`Trace: SET_ADD_TO_SELECTED_CONDITIONS()`)
+        return {
+          ...state,
+          addToSelected: action.payload.addToSelected
+        }
+      }
 
     default:
       break;

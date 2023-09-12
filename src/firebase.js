@@ -18,6 +18,7 @@
 
 import { initializeApp } from 'firebase/app'
 import { getAuth } from 'firebase/auth'
+import { userData } from './assets/initialDataConfig'
 
 import {
   getFirestore,
@@ -29,6 +30,8 @@ import {
   setDoc,
   onSnapshot,
 } from 'firebase/firestore'
+
+import weekChecker from './utilities/weekChecker'
 
 let firebaseConfig = {
   apiKey: process.env.REACT_APP_API_KEY,
@@ -92,7 +95,6 @@ export const userInitializationHandler = async (
         userObjFromDB = {
           ...userObjFromDB,
         }
-        console.log('exist')
 
         dispatch({
           type: 'SET_CURRENT_USER_TO_STATE',
@@ -111,14 +113,16 @@ export const gatherUserDataFromDB = async (userAuth, dispatch) => {
     db,
     `users`,
     `${userAuth.uid}`,
-    `userData`,
+    `testing`,
   )
   const userBoardQuery = query(userBoardFirestoreRef)
   const userBoardSnapshot = await getDocs(userBoardQuery)
   userBoardSnapshot.forEach((doc) => {
     userDataArray.push(doc.data())
   })
-  dispatch({ type: 'SET_USERLISTS', payload: { userDataArray: userDataArray } })
+  let updatedUserData = weekChecker(userDataArray[0])
+//   let testUserData = weekChecker(userData)
+  dispatch({ type: 'SET_USERLISTS', payload: { userData: updatedUserData } })
 }
 
 export const saveUserDataToDB = async (userUID, userDataObj) => {
@@ -128,7 +132,7 @@ export const saveUserDataToDB = async (userUID, userDataObj) => {
     db,
     `users`,
     `${userUID}`,
-    `userData`,
+    `testing`,
     `data`
     )
     

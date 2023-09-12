@@ -14,8 +14,8 @@ export const TrainerSelect = () => {
             <h1>Welcome {userData.name}!</h1>
             <span>Please select your trainer</span>
             <ul>
-                {userData.trainers.map((trainerEntry) => (
-                    <li onClick={() => setCurrentTrainer(trainerEntry.id)}>{trainerEntry.title}</li>
+                {userData.trainers.map((trainerEntry, index) => (
+                    <li key={index} onClick={() => setCurrentTrainer(trainerEntry.id)}>{trainerEntry.title}</li>
                 ))}
             </ul>
         </div>

@@ -2,7 +2,7 @@ import { useContext } from "react"
 import { MainContext } from "../context/MainContext"
 
 export const TaskList = () => {
-    const { state: { currentTrainerID, userData, userObj }, dispatch } = useContext(MainContext)
+    const { state: { currentTrainerID, userData, userObj, addToSelected }, dispatch } = useContext(MainContext)
 
     const taskDisplay = (task) => {
 
@@ -30,10 +30,34 @@ export const TaskList = () => {
         )
     }
 
-    const addToHistory = (clickedID) => {
-        let selectedTask = userData.trainers.filter(entry => entry.id === currentTrainerID)[0].tasks.filter(task => task.id === clickedID)[0]
-        console.log(selectedTask)
-        let mostRecentWeek = userData.trainers.filter(entry => entry.id === currentTrainerID)[0].history[0]
+    const addTaskToToday = (selectedTask) => {
+        const emptyWeek = userData.trainers.filter(entry => entry.id === currentTrainerID)[0].history[0] // ATTN: Will need trainerIndex to be set
+
+        function deepClone(obj) {
+            if (obj === null || typeof obj !== 'object') {
+                return obj;
+            }
+
+            if (Array.isArray(obj)) {
+                const newArray = [];
+                for (let i = 0; i < obj.length; i++) {
+                    newArray[i] = deepClone(obj[i]);
+                }
+                return newArray;
+            }
+
+            const newObj = {};
+            for (const key in obj) {
+                if (obj.hasOwnProperty(key)) {
+                    newObj[key] = deepClone(obj[key]);
+                }
+            }
+
+            return newObj;
+        }
+
+        let mostRecentWeek = deepClone(emptyWeek);
+
         const now = new Date();
         const currentDayOfWeekIndex = now.getDay();
         const daysOfWeek = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
@@ -45,15 +69,46 @@ export const TaskList = () => {
             mostRecentWeek,
             userUID: userObj.uid
         }
-        dispatch({type: 'ADD_TASK_TO_HISTORY', payload: payload})
+
+        return payload
+    }
+
+    const addTaskToSelected = (selectedTask, addToSelected) => {
+        const history = userData.trainers.filter(entry => entry.id === currentTrainerID)[0].history
+        const selectedWeek = history[addToSelected.weekIndex] // ATTN: Will need trainerIndex to be set
+        selectedWeek[addToSelected.day].push(selectedTask)
+
+        debugger
+
+        const payload = {
+            currentTrainerID,
+            history,
+            userUID: userObj.uid
+        }
+
+        return payload
+    }
+
+    const addToHistory = (clickedID) => {
+        let selectedTask = userData.trainers.filter(entry => entry.id === currentTrainerID)[0].tasks.filter(task => task.id === clickedID)[0]
+
+        let payload
+
+        if (addToSelected.weekIndex !== null) {
+            payload = addTaskToSelected(selectedTask, addToSelected)
+            dispatch({ type: 'ADD_TASK_TO_BACK_HISTORY', payload })
+        } else {
+            payload = addTaskToToday(selectedTask)
+            dispatch({ type: 'ADD_TASK_TO_HISTORY', payload: payload })
+        }
     }
 
     return (
         <div className="task-list">
             {
                 currentTrainerID !== null ?
-                    userData.trainers.filter(entry => entry.id === currentTrainerID)[0].tasks.map((task) => (
-                        <div className="task-display-entry" onDoubleClick={() => addToHistory(task.id)} >
+                    userData.trainers.filter(entry => entry.id === currentTrainerID)[0].tasks.map((task, index) => (
+                        <div key={index} className="task-display-entry" onDoubleClick={() => addToHistory(task.id)} >
                             {taskDisplay(task)}
                         </div>
                     ))
