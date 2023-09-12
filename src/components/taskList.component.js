@@ -94,7 +94,7 @@ export const TaskList = () => {
 
         let payload
 
-        if (addToSelected.weekIndex !== null) {
+        if (addToSelected.weekIndex !== null) { // NEEDS ADDITIONAL CONDITION TO ALLOW FOR MULTIPLE TASKS TO BE IMPLEMENTED, OR TURN OFF AFTER ONE
             payload = addTaskToSelected(selectedTask, addToSelected)
             dispatch({ type: 'ADD_TASK_TO_BACK_HISTORY', payload })
         } else {

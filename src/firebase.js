@@ -113,13 +113,14 @@ export const gatherUserDataFromDB = async (userAuth, dispatch) => {
     db,
     `users`,
     `${userAuth.uid}`,
-    `testing`,
+    `userData`,
   )
   const userBoardQuery = query(userBoardFirestoreRef)
   const userBoardSnapshot = await getDocs(userBoardQuery)
   userBoardSnapshot.forEach((doc) => {
     userDataArray.push(doc.data())
   })
+  debugger
   let updatedUserData = weekChecker(userDataArray[0])
 //   let testUserData = weekChecker(userData)
   dispatch({ type: 'SET_USERLISTS', payload: { userData: updatedUserData } })
@@ -132,7 +133,7 @@ export const saveUserDataToDB = async (userUID, userDataObj) => {
     db,
     `users`,
     `${userUID}`,
-    `testing`,
+    `userData`,
     `data`
     )
     
